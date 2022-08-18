@@ -25,8 +25,7 @@ body {
 
 img {
   border: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 img a {
@@ -220,17 +219,7 @@ a.jp-disabled:hover {
 
 .esp_anim.act_anim {
   display: block;
-  -webkit-animation: fate_in_esp 2s forwards 0.2s;
-          animation: fate_in_esp 2s forwards 0.2s;
-}
-
-@-webkit-keyframes fate_in_esp {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: fate_in_esp 2s forwards 0.2s;
 }
 
 @keyframes fate_in_esp {
@@ -251,34 +240,19 @@ a.jp-disabled:hover {
 }
 
 .in_top.act_anim {
-  -webkit-animation: intop 0.6s forwards 0.5s;
-          animation: intop 0.6s forwards 0.5s;
+  animation: intop 0.6s forwards 0.5s;
 }
 
 .in_down.act_anim {
-  -webkit-animation: indown 0.6s forwards 0.5s;
-          animation: indown 0.6s forwards 0.5s;
+  animation: indown 0.6s forwards 0.5s;
 }
 
 .in_left.act_anim {
-  -webkit-animation: inleft 0.6s forwards 0.5s;
-          animation: inleft 0.6s forwards 0.5s;
+  animation: inleft 0.6s forwards 0.5s;
 }
 
 .in_right.act_anim {
-  -webkit-animation: inright 0.6s forwards 0.5s;
-          animation: inright 0.6s forwards 0.5s;
-}
-
-@-webkit-keyframes intop {
-  from {
-    opacity: 0;
-    top: -200px;
-  }
-  to {
-    opacity: 1;
-    top: 0px;
-  }
+  animation: inright 0.6s forwards 0.5s;
 }
 
 @keyframes intop {
@@ -291,16 +265,6 @@ a.jp-disabled:hover {
     top: 0px;
   }
 }
-@-webkit-keyframes indown {
-  from {
-    opacity: 0;
-    bottom: -200px;
-  }
-  to {
-    opacity: 1;
-    bottom: 0px;
-  }
-}
 @keyframes indown {
   from {
     opacity: 0;
@@ -311,16 +275,6 @@ a.jp-disabled:hover {
     bottom: 0px;
   }
 }
-@-webkit-keyframes inleft {
-  from {
-    opacity: 0;
-    left: -200px;
-  }
-  to {
-    opacity: 1;
-    left: 0px;
-  }
-}
 @keyframes inleft {
   from {
     opacity: 0;
@@ -329,16 +283,6 @@ a.jp-disabled:hover {
   to {
     opacity: 1;
     left: 0px;
-  }
-}
-@-webkit-keyframes inright {
-  from {
-    opacity: 0;
-    right: -200px;
-  }
-  to {
-    opacity: 1;
-    right: 0px;
   }
 }
 @keyframes inright {
@@ -509,8 +453,7 @@ a.jp-disabled:hover {
   flex-direction: column;
   border-radius: 0 0 2px 2px;
   opacity: 0;
-  -webkit-animation: fate_in 0.5s forwards;
-          animation: fate_in 0.5s forwards;
+  animation: fate_in 0.5s forwards;
 }
 
 .nav ul li ul.submenu li {
@@ -540,17 +483,6 @@ a.jp-disabled:hover {
 
 .nav ul li:hover ul.submenu {
   display: block;
-}
-
-@-webkit-keyframes fate_in {
-  from {
-    opacity: 0;
-    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0);
-  }
-  to {
-    opacity: 1;
-    box-shadow: 0 16px 20px -12px rgba(0, 0, 0, 0.2);
-  }
 }
 
 @keyframes fate_in {
@@ -719,8 +651,7 @@ a.jp-disabled:hover {
 .img_banner img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .img_banner:before {
@@ -891,8 +822,7 @@ a.jp-disabled:hover {
   max-width: 876px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
   row-gap: 32px;
 }
 
@@ -906,28 +836,23 @@ a.jp-disabled:hover {
 }
 
 .itm_ventajas:nth-child(2) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .itm_ventajas:nth-child(3) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .itm_ventajas:nth-child(4) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 
 .itm_ventajas:nth-child(5) {
-  -webkit-animation-delay: 0.12s;
-          animation-delay: 0.12s;
+  animation-delay: 0.12s;
 }
 
 .itm_ventajas:nth-child(6) {
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  animation-delay: 0.15s;
 }
 
 .ic_vent {
@@ -939,8 +864,7 @@ a.jp-disabled:hover {
 .ic_vent img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   max-height: 100%;
 }
 
@@ -1005,8 +929,7 @@ a.jp-disabled:hover {
   height: 292px;
   top: 412px;
   left: 17.5%;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .minib_home_single.minib_empresas {
@@ -1014,8 +937,7 @@ a.jp-disabled:hover {
   height: 409px;
   top: 295px;
   right: 0;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .minib_home_single:hover:before {
@@ -1045,8 +967,7 @@ a.jp-disabled:hover {
 .img_minib_home img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .h_minib_home {
@@ -1073,8 +994,7 @@ a.jp-disabled:hover {
 .cuadro_minb {
   border: 1px solid #ccc;
   position: absolute;
-  -webkit-animation-name: cuadros_h;
-          animation-name: cuadros_h;
+  animation-name: cuadros_h;
   display: block;
   opacity: 0;
 }
@@ -1084,10 +1004,8 @@ a.jp-disabled:hover {
   height: 194px;
   top: 77px;
   left: 67.5%;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .cuadro_minb.cmb_2 {
@@ -1095,12 +1013,9 @@ a.jp-disabled:hover {
   height: 130px;
   right: 0;
   top: 141px;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
 }
 
 .cuadro_minb.cmb_3 {
@@ -1108,24 +1023,9 @@ a.jp-disabled:hover {
   height: 176px;
   left: 0;
   top: 411px;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-@-webkit-keyframes cuadros_h {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
 }
 
 @keyframes cuadros_h {
@@ -1461,8 +1361,7 @@ a.jp-disabled:hover {
 .imgPTSBC img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .contenidorgto,
@@ -2009,8 +1908,7 @@ a.jp-disabled:hover {
   border-radius: 2px;
   grid-column: 2/3;
   grid-row: 1/5;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform: translate(0px, 90px);
   width: 100%;
 }
@@ -2279,7 +2177,6 @@ a.jp-disabled:hover {
   grid-column: 1/4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: -webkit-min-content;
   grid-template-rows: min-content;
   justify-content: center;
   align-items: center;
@@ -2374,8 +2271,6 @@ a.jp-disabled:hover {
   min-height: 126px;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   background: none;
   cursor: pointer;
@@ -2500,7 +2395,6 @@ a.jp-disabled:hover {
   }
   .sec1noticia {
     grid-template-columns: 1fr;
-    grid-template-rows: -webkit-min-content;
     grid-template-rows: min-content;
     grid-gap: 10px;
     padding: 20px;
