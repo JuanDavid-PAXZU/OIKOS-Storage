@@ -68,6 +68,35 @@ $(document).ready(function () {
         $('.in_top, .in_down, .in_left, .in_right, .esp_anim').addClass('act_anim');
     }
 
+
+    /* FUNCION INTERNA QUIENES SOMOS - FECHAS */
+
+    let btnFecha = document.querySelectorAll('.fechas a');
+    let containerCategoria = document.querySelectorAll('.desc_fechas');
+    let categoria = null;
+
+    btnFecha.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+
+            btnFecha.forEach((deletClassBtn) =>{
+                deletClassBtn.classList.remove('active');
+                e.currentTarget.classList.add('active');
+            });
+
+            containerCategoria.forEach((el) => {
+
+                categoria = el.dataset.categoria;
+
+                if(e.currentTarget.dataset.categoria === categoria){
+                    el.classList.add('active');
+                }else{
+                    el.classList.remove('active');
+                }
+                
+            });
+
+        })
+    })
 });
 
 
