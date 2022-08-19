@@ -1809,57 +1809,110 @@ a.jp-disabled:hover {
   margin-left: 10px;
 }
 
-.contactocont {
+/* ESTILOS INTERNA CONTACTO */
+/* .contactocont {
   display: grid;
   grid-template-columns: 1fr max-content(1100px);
   grid-template-rows: 500px 300px;
+} */
+.frame1contacto {
+  position: relative;
 }
 
 .bg {
-  background-image: url(../images/diseno/fondocontacto.png);
-  grid-column: 1/3;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/diseno/fondocontacto.png") no-repeat center;
+  background-attachment: fixed;
   background-size: cover;
-  grid-row: 1/2;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  height: 100%;
+  max-height: 500px;
 }
 
-.subframe1 {
+.c_header_contacto, .cont_datos_contacto {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  align-items: flex-start;
+  padding: 120px 0 0;
+  box-sizing: border-box;
+}
+
+.c_header_contacto {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.cont_datos_contacto {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  text-align: left;
+  margin: -270px auto 100px;
+  max-width: 970px;
+  font-size: 18px;
+}
+.cont_datos_contacto > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.5;
+}
+.cont_datos_contacto > div > div {
+  width: 20px;
   display: flex;
   justify-content: center;
-  grid-row: 1/2;
-  grid-column: 1/2;
+  align-items: center;
+}
+
+.subframe1 .title {
+  padding-top: 130px;
+  font-size: 40px;
+}
+
+/* .subframe1{
+} */
+/* .subframe1 {
+  display: flex;
+  justify-content: center;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
   justify-content: start;
   align-items: center;
   margin-left: 20%;
-}
-
-.subframe2 {
-  grid-column: 1/2;
-  grid-row: 2/3;
+} */
+/* .subframe2 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   margin-left: 20%;
-}
-
-.subframe2 div {
+} */
+/* .subframe2 div {
   display: flex;
   flex-direction: row;
   margin: 10px;
   margin-left: 0;
   align-items: center;
-}
-
-.formcont {
-  grid-row: 1/3;
-  grid-column: 2/3;
+} */
+/* .formcont {
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
   align-self: center;
-}
-
-.formcont .form {
+} */
+form.form {
   max-width: 660px;
   width: 100%;
-  padding: 20px;
+  padding: 65px 120px;
   box-sizing: border-box;
   background: #ffffff;
   box-shadow: 0px 40px 40px -20px rgba(0, 0, 0, 0.15);
@@ -2362,6 +2415,9 @@ a.jp-disabled:hover {
   width: 76px;
   background: var(--c_pri);
 }
+.title.cw {
+  color: #FFFFFF;
+}
 
 .s_header_quienes {
   background: url("../images/diseno/quienes-somos/bg_header.png") no-repeat;
@@ -2815,10 +2871,10 @@ a.jp-disabled:hover {
   .fecharticulo {
     margin-top: 10px;
   }
-  .subframe1,
-.subframe2 {
+  /* .subframe1,
+  .subframe2 {
     margin-left: 7%;
-  }
+  } */
   .botonwazepqrs img {
     min-height: 40px;
     min-width: 30px;
@@ -2977,20 +3033,21 @@ a.jp-disabled:hover {
   .contactocont {
     grid-template-rows: 200px 650px 300px;
   }
-  .subframe1,
-.subframe2 {
+  /* .subframe1,
+  .subframe2 {
     justify-content: start;
     align-items: center;
     margin-left: 10%;
-  }
-  .subframe1 {
-    grid-row: 1/2;
-    grid-column: 1/3;
-  }
-  .subframe2 {
-    grid-row: 3/4;
-    grid-column: 1/3;
-  }
+  } */
+  /* 
+    .subframe1 {
+      grid-row: 1 / 2;
+      grid-column: 1 / 3;
+    } */
+  /* .subframe2 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+  } */
   .formcont {
     grid-row: 2/3;
     grid-column: 1/3;
