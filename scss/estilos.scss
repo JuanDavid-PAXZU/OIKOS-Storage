@@ -2730,14 +2730,7 @@ form.form {
     padding-right: 0px;
   }
 
-  .form input,
-  .form select,
-  .form textarea,
-  .form button,
-  .checkbox,
-  .captcha {
-    max-width: 250px;
-  }
+  
 
   .central {
     margin: 10px;
@@ -2753,16 +2746,24 @@ form.form {
   .calificarnota {
     grid-column: 1 / 3;
   }
+  /* ESTILOS CONTACTO */
+
+  .form input,
+  .form select,
+  .form textarea,
+  .form button,
+  .checkbox,
+  .captcha {
+    max-width: initial;
+  }
+  form.form{
+    padding: 65px 50px;
+  }
 }
 @media screen and (max-width: 768px) {
   .fecharticulo {
     margin-top: 10px;
   }
-
-  /* .subframe1,
-  .subframe2 {
-    margin-left: 7%;
-  } */
 
   .botonwazepqrs img {
     min-height: 40px;
@@ -2800,11 +2801,11 @@ form.form {
     flex-direction: column;
   }
 
-  .form {
+/*   .form {
     margin-top: 20px;
     width: 100%;
     height: 100%;
-  }
+  } */
 
   .sec1pqr {
     width: 100%;
@@ -2943,6 +2944,22 @@ form.form {
   .nota_principal > a{
     max-height: 300px;
   }
+
+  /* ESTILOS CONTACTO */
+  .c_header_contacto, .cont_datos_contacto{
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0;
+    padding:10px 0 60px;
+    box-sizing: border-box;
+  }
+
+  .form{
+    margin: 0 auto;
+  }
+  .subframe1 .title{
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .bg {
@@ -2988,14 +3005,14 @@ form.form {
     margin-left: 40px;
   }
 
-  .form input,
+/*   .form input,
   .form select,
   .form textarea,
   .form button,
   .checkbox,
   .captcha {
     width: 80%;
-  }
+  } */
 
   .contpqr {
     flex-direction: column;
