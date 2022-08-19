@@ -9,12 +9,15 @@ $(document).ready(function () {
         },
     });
 
+    /****slyder testimonios home****/
 
-    /****carrusel ****/
-
-    
-
-
+    let swiper2 = new Swiper(".cnt_slider_textm .swiper-container", {
+        simulateTouch: false,
+        navigation: {
+          nextEl: ".cnt_slider_textm .swiper-button-next",
+          prevEl: ".cnt_slider_textm .swiper-button-prev",
+        },
+    });
     /******************/
 
     /*********
