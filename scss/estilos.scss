@@ -2480,12 +2480,14 @@ form.form {
     }
     .txt_fechas{
       padding: 80px;
-      box-sizing: border-box;  
+      box-sizing: border-box; 
+      text-align: left;
+      line-height: 1.3;
     }
   }
   .fechas{
     display: grid;
-    grid: 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     a{
       cursor: pointer;
@@ -2900,6 +2902,12 @@ form.form {
   form.form{
     padding: 65px 50px;
   }
+
+  /* ESTILOS QUIENES SOMOS */
+
+  .container_fechas .desc_fechas .txt_fechas{
+    padding: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   .fecharticulo {
@@ -2941,12 +2949,6 @@ form.form {
   .contenidopqr {
     flex-direction: column;
   }
-
-/*   .form {
-    margin-top: 20px;
-    width: 100%;
-    height: 100%;
-  } */
 
   .sec1pqr {
     width: 100%;
@@ -3101,6 +3103,47 @@ form.form {
   .subframe1 .title{
     padding-top: 0;
   }
+  /* ESTILOS QUIENES SOMOS */
+
+  .header_quienes{
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_quienes .video{
+    width: 100%;
+  }
+  .header_quienes .txt_header{
+    width: 100%;
+  }
+  .items_minibodegas{
+    grid-template-columns: 1fr;
+  }
+  .i_minib{
+    max-width: initial;
+  }
+  .container_fechas{
+    grid-template-columns: 1fr;
+  }
+  .container_fechas .fechas{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+  }
+
+  .container_fechas .desc_fechas{
+    grid-template-columns: 1fr;
+  }
+  .container_fechas .desc_fechas picture::before{
+    display: none;
+  }
+  .container_fechas .desc_fechas picture{
+    max-height: 350px;
+  }
 }
 @media screen and (max-width: 480px) {
   .bg {
@@ -3251,5 +3294,17 @@ form.form {
   }
   .nota_principal{
     grid-template-columns: 1fr;
+  }
+
+  /* ESTILOS QUIENES SOMOS */
+
+  .container_fechas .desc_fechas picture{
+    max-height: 200px;
+  }
+  .container_fechas .fechas a{
+    font-size: 24px;
+  }
+  .header_quienes iframe{
+    max-height: 200px;
   }
 }
