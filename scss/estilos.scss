@@ -197,7 +197,6 @@ a.jp-disabled:hover {
 }
 .in_top,
 .in_down,
-.in_down,
 .in_left,
 .in_right {
   opacity: 0;
@@ -215,6 +214,21 @@ a.jp-disabled:hover {
 .in_right.act_anim {
   animation: inright 0.6s forwards 0.5s;
 }
+
+.delay-4{
+  animation-duration: 0.4s!important;
+}
+.delay-8{
+  animation-duration: 0.8s!important;
+}
+.delay-10{
+  animation-duration: 1s!important;
+}
+.delay-12{
+  animation-duration: 1.2s!important;
+}
+
+
 @keyframes intop {
   from {
     opacity: 0;
@@ -1289,10 +1303,7 @@ a.jp-disabled:hover {
 .botonpfc {
   border: 1px solid #cccccc;
   border-radius: 4px 4px 0px 0px;
-  font-family: "Roboto Flex";
-  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
   line-height: 19px;
   text-align: center;
   padding: 10px;
@@ -1300,6 +1311,7 @@ a.jp-disabled:hover {
   box-sizing: border-box;
   border-bottom: 0px;
   cursor: pointer;
+  background-color: #F4F4F4;
 }
 
 .imgpf {
@@ -1356,6 +1368,7 @@ a.jp-disabled:hover {
   box-sizing: border-box;
   display: none;
   overflow: hidden;
+  transition: 300ms ease;
 }
 
 .info {
@@ -2269,7 +2282,7 @@ a.jp-disabled:hover {
 }
 
 .s_nuestra_historia{
-  padding: 60px 0;
+  padding: 60px 0 30px;
   box-sizing: border-box;
 }
 
@@ -2468,9 +2481,168 @@ a.jp-disabled:hover {
 }
 
 
+/* ESTILOS BLOG */
+
+.s_nota_pri_blog{
+  background-color: #FFF;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-color: #F4F4F4;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+}
+
+.nota_principal{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 24px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  >a{
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0px 40px 40px -20px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .desc_nota_prin{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 40px 40px -20px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 80px;
+    box-sizing: border-box;
+    .btn{
+      padding: 10px;
+      margin: 30px 0 0;
+    }
+  }
+}
 
 
+.tit_nota_pri{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+}
+.author{
+  font-size: 13px;
+}
 
+.container_notas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  justify-items: center;
+
+}
+
+.s_notas_sec{
+  background-color: #FFFFFF;
+  padding: 70px 0 0;
+  box-sizing: border-box;
+}
+
+.c_notas_sec{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+
+}
+
+.card_nota{
+  background: #F4F4F4;
+  border-radius: 4px;
+  overflow: hidden;
+  height: fit-content;
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 280px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 600ms ease;
+    }
+  }
+  .cont_des_notasec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 8px;
+    h3{
+      margin: 0 0 20px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .author{
+      margin: 0 0 20px;
+    }
+  }
+  .botonarticulo{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+  }
+  &:hover{
+    img{
+      transform: scale(1.06);
+    }
+  }
+}
+
+.paginador{
+  grid-column: 1 / 3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  box-sizing: border-box;
+  a{
+    width: 30%;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 600;
+    color:#000000;
+    &:hover{
+      background-color: var(--c_pri);
+      border: 1px solid transparent;
+    }
+  }
+}
 
 
 
@@ -2694,6 +2866,19 @@ a.jp-disabled:hover {
   .notanterior button {
     min-height: auto;
   }
+
+  /* ESTILOS BLOG */
+
+  .c_notas_sec{
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .nota_principal .desc_nota_prin{
+    padding: 40px;
+  }
+  .nota_principal > a{
+    max-height: 300px;
+  }
 }
 @media screen and (max-width: 480px) {
   .bg {
@@ -2851,5 +3036,24 @@ a.jp-disabled:hover {
 
   .sec2noticia {
     grid-gap: 30px;
+  }
+
+  /* ESTILOS BLOG */
+
+  .container_notas{
+    grid-template-columns: 1fr;
+  }
+  .paginador{
+    grid-column: 1;
+    gap: 20px;
+    a{
+      width: 100%;
+    }
+  }
+  .card_nota a{
+    max-height: 200px;
+  }
+  .nota_principal{
+    grid-template-columns: 1fr;
   }
 }

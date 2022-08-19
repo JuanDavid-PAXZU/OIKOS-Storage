@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/estilos.css" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,  user-scalable=no">
+    <title>Oikos Storage</title>
+
+    <link rel="stylesheet" href="plugins/Swiper/swiper.min.css">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+
     <!-- TIPOGRAFIA -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- ICON FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+    <!-- libreria jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- para mapa -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
     <title>Preguntas</title>
   </head>
   <body>
     <div class="cnt_central">
       <div class="title">
         PREGUNTAS FRECUENTES
-        <div class="salto"></div>
       </div>
       <div class="contenidopf">
         <div class="botonespf">
@@ -277,44 +284,54 @@
       </div>
     </div>
     <script>
-      var coll = document.getElementsByClassName("collapsiblepf");
-      var i;
 
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
+      $(document).ready(function(){
 
-      const catg = document.querySelectorAll(".botonpfc");
-      const infCatg = document.querySelectorAll(".info");
 
-      let selectCatg = null;
+        const catg = document.querySelectorAll(".botonpfc");
+        const infCatg = document.querySelectorAll(".info");
 
-      catg.forEach((pest) => {
-        pest.addEventListener("click", (e) => {
-          catg.forEach((el) => {
-            el.classList.remove("active");
+        let selectCatg = null;
+
+        catg.forEach((pest) => {
+          pest.addEventListener("click", (e) => {
+            catg.forEach((el) => {
+              el.classList.remove("active");
+            });
+            e.currentTarget.classList.toggle("active");
+
+            selectCatg = pest.dataset.cat;
+
+            infCatg.forEach((infel) => {
+              if (infel.dataset.cat === selectCatg) {
+                infel.classList.add("active");
+              } else {
+                infel.classList.remove("active");
+              }
+            });
           });
-          e.currentTarget.classList.toggle("active");
+        });
 
-          selectCatg = pest.dataset.cat;
 
-          infCatg.forEach((infel) => {
-            if (infel.dataset.cat === selectCatg) {
-              infel.classList.add("active");
+        let coll = document.querySelectorAll(".collapsiblepf");
+        let i;
+  
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
             } else {
-              infel.classList.remove("active");
+              content.style.display = "block";
             }
           });
-        });
+        }
+
+
       });
+
+      
     </script>
   </body>
 </html>
