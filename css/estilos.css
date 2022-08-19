@@ -1666,7 +1666,9 @@ a.jp-disabled:hover {
   font-size: 13px;
   color: #fff;
 }
-
+.btn_menu_movil{
+  display: none;
+}
 /******/
 /* OTRAS INTERNAS EN ADELANTE */
 .contenidogr {
@@ -1675,6 +1677,7 @@ a.jp-disabled:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 80px 0;
 }
 
 .infogr {
@@ -1729,6 +1732,7 @@ a.jp-disabled:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 80px 0;
 }
 
 .info404 {
