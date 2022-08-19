@@ -1890,7 +1890,7 @@ a.jp-disabled:hover {
 .contenidorgto,
 .contenidopol {
   margin-top: 40px;
-  margin: 32px 5%;
+  margin: 110px 5%;
 }
 
 .textorgto {
@@ -3484,6 +3484,9 @@ form.form {
 }
 .cont_ctas .btn:last-child {
   border-radius: 2px;
+}
+.frame1pqr{
+  padding-top: 100px;
 }
 
 /* *********** */
