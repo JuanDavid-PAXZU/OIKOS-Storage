@@ -3491,6 +3491,20 @@ form.form {
 /* RESPONSIVE  */
 /* *********** */
 @media screen and (max-width: 1200px) {
+  /* ESTILOS HEADER */
+  .logo_prin {
+    width: 136px;
+    height: 100px;
+  }
+  .nav {
+    display: none;
+  }
+  .btn_menu_movil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   /* ESTILOS FOOTER */
   .cnt_mid_pie {
     column-gap: 16px;
@@ -3788,6 +3802,40 @@ form.form {
     align-items: center;
     justify-content: center;
   }
+  .txt_pie {
+    padding: 32px 0px 32px 0;
+  }
+  .cnt_lat_pie {
+    padding: 20px;
+    transform: skewX(0deg);
+    border-radius: 0 0 50px 50px;
+    overflow: hidden;
+  }
+  .cnt_gen_inf_lat_pie {
+    transform: skewX(0deg);
+  }
+  .cnt_gen_cert_pie {
+    justify-content: center;
+  }
+  /* ESTILOS HEADER */
+  .cnt_h_bar {
+    height: 60px;
+  }
+  .logo_prin {
+    width: 100%;
+    height: 70px;
+    max-width: 90px;
+    background-size: 70% auto;
+    background-position: center;
+  }
+  .cnt_h_bar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  .cuerpo {
+    padding-top: 80px;
+  }
 }
 @media screen and (max-width: 480px) {
   .bg {
@@ -3923,5 +3971,13 @@ form.form {
   }
   .header_quienes iframe {
     max-height: 200px;
+  }
+  /* ESTILOS HEADER */
+  .txt_pse, .btn_z_clientes {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .logo_h {
+    margin: 0 8px;
   }
 }/*# sourceMappingURL=estilos.css.map */
