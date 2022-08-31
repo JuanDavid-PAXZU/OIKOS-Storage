@@ -1498,7 +1498,7 @@ a.jp-disabled:hover {
 
 
 .contenidogr {
-  height: 100%;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1554,7 +1554,7 @@ a.jp-disabled:hover {
 }
 
 .contenido404 {
-  height: 100%;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1722,14 +1722,14 @@ a.jp-disabled:hover {
 .contenidorgto,
 .contenidopol {
   margin-top: 40px;
-  margin: 32px 5%;
+  margin: 52px 5%;
 }
 
 .textorgto {
   display: flex;
   flex-direction: row;
   margin-top: 25px;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
 }
 
