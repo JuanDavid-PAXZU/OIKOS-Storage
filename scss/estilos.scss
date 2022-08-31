@@ -3340,6 +3340,13 @@ form.form {
 
 @media screen and (max-width: 1200px) {
 
+    /* ESTILOS HEADER */
+    .nav ul li{
+      margin: 0 14px;
+    }
+    .nav ul li a.link_despl{
+      padding-right: 30px;
+    }
     /* ESTILOS FOOTER */
     .cnt_mid_pie{
       column-gap: 16px;
@@ -3347,6 +3354,12 @@ form.form {
     .cnt_lat_pie{
       padding: 42px 28px 44px 20px;
     }
+    /**** HOME ******/
+    .cnt_gen_inf_banner{
+      box-sizing: border-box;
+      padding: 0 68px;  
+    }
+
 }
 @media screen and (max-width: 1050px) {
   /* ESTILOS HEADER */
@@ -3529,6 +3542,7 @@ form.form {
   .footer{
     display: grid;
     grid-template-columns: 1fr;
+    overflow: hidden;
   }
   .cnt_lat_pie{
     position: initial;
@@ -3548,6 +3562,56 @@ form.form {
   .col_mid_men_pie, .col_susc_pie{
     width: 100%;
   }
+  /**** HOME ******/
+  .s_banner{
+    height: auto;
+  }
+  .img_banner{
+    height: 420px;
+    &:before{
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(90deg, rgba(0, 0, 0, 0.7) 18.69%, rgba(0, 0, 0, 0.4) 44.85%, rgba(0, 0, 0, 0) 65.52%);
+    }
+  }
+  .cnt_inf_banner{
+    width: 60%;
+  } 
+  .h_banner{
+    font-size: 32px;
+  }
+  .txt_baner{
+    font-size: 18px;
+  } 
+  .s_ventajas{
+    padding-bottom: 24px;
+  } 
+  .cnt_gen_inf_ventajas{
+    padding: 24px 0;
+    flex-flow: row;
+  }
+  .itm_ventajas{
+    padding: 24px;
+  }
+  .h_ventaja{
+    font-size: 16px;
+  }
+  .textocard{
+    margin-left: 0;
+  }
+  .botonwazepqrs{
+    width: 48px;
+    margin-right: 10px;
+  }
+  .cnt_gen_testm{
+    padding: 16px 0;
+  }
+  .cnt_slider_textm{
+    padding: 0 64px 32px;
+  }
+  .cnt_inf_testm{
+    padding: 0 16px;
+  }
+  
+  /****************/ 
 }
 @media screen and (max-width: 768px) {
   .fecharticulo {
@@ -3850,8 +3914,57 @@ form.form {
     align-items: center;
     height: 50px;
   }
-  
+  /**** HOME ******/
 
+  .img_banner{
+    height: 200px;
+  }
+  .cnt_gen_inf_banner{
+    position: relative;  
+    padding: 24px;
+    background: #333;
+  }
+  .slider_banner .swiper-button-prev, .slider_banner .swiper-button-next{
+    width: 35px;
+    height: 35px;
+    span{
+      line-height: 35px;  
+    }
+  }
+  .cnt_inf_banner{
+    width: 100%;
+  }
+  .h_banner{
+    font-size: 24px;
+  }
+  .txt_baner{
+    font-size: 16px;
+    padding: 8px 0;
+  }
+  .cnt_gen_arboles{
+    margin-top: 0;
+  }
+  .cnt_gen_arboles{
+    flex-flow: column;
+    align-items: center;
+  }
+  .ic_arbol{
+    display: none;
+  }
+  .txt_izq_arboles{
+    padding-bottom: 8px;
+  }
+  .cnt_gen_inf_ventajas{
+    flex-flow: column;
+  }
+  .cnt_list_ventajas{
+    width: 100%;
+  }
+  .h_lat{
+    width: 100%;
+    max-width: none;
+    margin-bottom: 16px;
+  }
 }
 @media screen and (max-width: 480px) {
   .bg {
