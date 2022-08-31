@@ -1792,6 +1792,10 @@ a.jp-disabled:hover {
   margin-top: 30px;
 }
 
+.s_pqr {
+  padding: 100px 0 0;
+}
+
 .titleseriespqr {
   font-family: "Roboto Flex";
   font-style: normal;
@@ -1813,16 +1817,17 @@ a.jp-disabled:hover {
 }
 
 .contenidoPTSBC {
-  background: #ffffff;
-  box-shadow: 0px 40px 40px -20px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 30px;
+  padding: 0 0 80px;
 }
 
 .framePTSBC {
   display: flex;
   flex-direction: row;
+  background: #ffffff;
+  box-shadow: 0px 100px 40px -20px rgba(0, 0, 0, 0.15);
 }
 
 .frame1PTSBC {
@@ -2068,7 +2073,7 @@ a.jp-disabled:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 700px;
+  height: 737px;
   width: 610px;
 }
 
@@ -3572,6 +3577,10 @@ form.form {
   }
   .col_mid_men_pie, .col_susc_pie {
     width: 100%;
+  }
+  /* INTERNA PQR */
+  .s_pqr {
+    padding: 60px 0 0;
   }
 }
 @media screen and (max-width: 768px) {
