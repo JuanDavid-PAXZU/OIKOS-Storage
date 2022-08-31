@@ -3410,6 +3410,83 @@ form.form {
   font-weight: 700;
 }
 
+.item_container_sede .title {
+  margin-bottom: 30px;
+}
+
+.ventajas_sede {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0 0 30px;
+}
+.ventajas_sede .card_ventaja {
+  border: 1px solid #D6D6D6;
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
+  text-align: left;
+  font-size: 22px;
+}
+
+.card-sizes {
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px 20px 0;
+  box-sizing: border-box;
+}
+.card-sizes .box {
+  border: 1px solid #CCCCCC;
+  border-bottom: 0px solid #CCCCCC;
+  border-radius: 2px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-weight: 800;
+  font-size: 20px;
+  position: relative;
+  width: 90px;
+}
+.card-sizes .box::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  height: 10px;
+  width: 100px;
+  right: 0;
+  margin: 0 auto;
+  border: 1px solid #CCCCCC;
+  left: calc(50% - 51px);
+}
+.card-sizes .box span {
+  position: absolute;
+  font-size: 10px;
+}
+
+.cont_card_sizes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.sizes_sede {
+  padding: 0 0 40px;
+}
+
+.sizes_sede .desc {
+  text-align: left;
+}
+
+.desc.anotacion {
+  font-size: 14px;
+}
+
 /* SWIPER SLIDER SEDE */
 /* 
     .swiper {
@@ -3951,8 +4028,15 @@ form.form {
     align-items: center;
     height: 50px;
   }
-  .cuerpo {
-    padding-top: 80px;
+  /* INTERNA NOTA‹ */
+  .saltonoticia {
+    margin: 10px 0;
+  }
+  .titlenoticia {
+    line-height: 1.2;
+  }
+  .autor {
+    margin-top: 8px;
   }
 }
 @media screen and (max-width: 480px) {
