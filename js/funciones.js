@@ -1,5 +1,25 @@
 $(document).ready(function () {
 
+    /**** desplegar menu principal en movil ****/
+
+    $('.btn_menu_movil').click(function(){
+        
+        if($(this).hasClass('active')){
+            $(this).removeClass('active');
+            $('.nav').removeClass('active');
+        }else{
+            $(this).addClass('active');
+            $('.nav').addClass('active');
+        }
+    });
+
+    /**** desplegar submenu en movil al click ****/
+    if($(window).width() < 1051){
+        $('nav ul li').click(function(){
+            $(this).children('.submenu').slideToggle('fast');
+        });
+    }
+
     /****slider hero****/
     var swiper = new Swiper(".slider_banner .swiper-container", {
         simulateTouch: false,
