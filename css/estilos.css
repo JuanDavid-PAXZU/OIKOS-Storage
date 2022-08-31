@@ -2018,7 +2018,7 @@ a.jp-disabled:hover {
   box-sizing: border-box;
   display: none;
   overflow: hidden;
-  transition: 300ms ease;
+  transition: none;
 }
 
 .info {
