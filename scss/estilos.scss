@@ -3514,7 +3514,7 @@ form.form {
   .sec1noticia {
     grid-template-columns: 1fr;
     grid-template-rows: min-content;
-    grid-gap: 10px;
+    grid-gap: 20px;
     padding: 20px;
     box-sizing: border-box;
   }
@@ -3750,6 +3750,16 @@ form.form {
     padding-top: 80px;
   }
 
+  /* INTERNA NOTA‹ */
+  .saltonoticia{
+    margin: 10px 0;
+  }
+  .titlenoticia{
+    line-height: 1.2;
+  }
+  .autor{
+    margin-top: 8px;
+  }
 }
 @media screen and (max-width: 480px) {
   .bg {
@@ -3872,7 +3882,7 @@ form.form {
 
   .titlenoticia {
     font-size: 25px;
-    line-height: 40px;
+    line-height: 1.2;
   }
 
   .botonesnoticia {
