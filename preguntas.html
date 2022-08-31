@@ -604,7 +604,16 @@
       let coll = document.querySelectorAll(".collapsiblepf");
 
       $(coll).click(function(){
-        $(this).next().slideToggle();
+        if($(this).hasClass('active')){
+          $(coll).removeClass('active');
+          $(coll).next().slideUp();
+        }else{
+          $(coll).removeClass('active');
+          $(coll).next().slideUp();
+          $(this).toggleClass('active');
+          $(this).next().slideToggle();
+        } 
+        
       });
 
 
