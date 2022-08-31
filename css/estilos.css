@@ -1675,7 +1675,7 @@ a.jp-disabled:hover {
 /******/
 /* OTRAS INTERNAS EN ADELANTE */
 .contenidogr {
-  height: 100%;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1729,7 +1729,7 @@ a.jp-disabled:hover {
 }
 
 .contenido404 {
-  height: 100%;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1792,6 +1792,10 @@ a.jp-disabled:hover {
   margin-top: 30px;
 }
 
+.s_pqr {
+  padding: 50px 0 0;
+}
+
 .titleseriespqr {
   font-family: "Roboto Flex";
   font-style: normal;
@@ -1813,16 +1817,16 @@ a.jp-disabled:hover {
 }
 
 .contenidoPTSBC {
-  background: #ffffff;
-  box-shadow: 0px 40px 40px -20px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   text-align: left;
-  margin-top: 10px;
+  padding: 0 0 80px;
 }
 
 .framePTSBC {
   display: flex;
   flex-direction: row;
+  background: #ffffff;
+  box-shadow: 0px 100px 40px -20px rgba(0, 0, 0, 0.15);
 }
 
 .frame1PTSBC {
@@ -1888,17 +1892,11 @@ a.jp-disabled:hover {
   object-fit: cover;
 }
 
-.contenidorgto,
-.contenidopol {
-  margin-top: 40px;
-  margin: 32px 5%;
-}
-
 .textorgto {
   display: flex;
   flex-direction: row;
   margin-top: 25px;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
 }
 
@@ -2020,7 +2018,7 @@ a.jp-disabled:hover {
   box-sizing: border-box;
   display: none;
   overflow: hidden;
-  transition: 300ms ease;
+  transition: none;
 }
 
 .info {
@@ -2068,7 +2066,7 @@ a.jp-disabled:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 700px;
+  height: 737px;
   width: 610px;
 }
 
@@ -2322,6 +2320,9 @@ a.jp-disabled:hover {
 /* ESTILOS INTERNA CONTACTO */
 .frame1contacto {
   position: relative;
+}
+.frame1contacto .miga a, .frame1contacto .miga span {
+  color: #FFF;
 }
 
 .bg {
@@ -3686,6 +3687,10 @@ form.form {
   .col_mid_men_pie, .col_susc_pie {
     width: 100%;
   }
+  /* INTERNA PQR */
+  .s_pqr {
+    padding: 20px 0 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .fecharticulo {
@@ -3743,7 +3748,7 @@ form.form {
   .sec1noticia {
     grid-template-columns: 1fr;
     grid-template-rows: min-content;
-    grid-gap: 10px;
+    grid-gap: 20px;
     padding: 20px;
     box-sizing: border-box;
   }
@@ -3946,6 +3951,9 @@ form.form {
     align-items: center;
     height: 50px;
   }
+  .cuerpo {
+    padding-top: 80px;
+  }
 }
 @media screen and (max-width: 480px) {
   .bg {
@@ -4047,7 +4055,7 @@ form.form {
   }
   .titlenoticia {
     font-size: 25px;
-    line-height: 40px;
+    line-height: 1.2;
   }
   .botonesnoticia {
     margin-top: 0;

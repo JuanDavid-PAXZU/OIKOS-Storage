@@ -119,11 +119,18 @@
 
     <main class="cuerpo">
 
+      <div class="cnt_central">
+        <div class="miga">
+          <a href="">OIKOS Storager</a>
+          <span> > </span>
+          <a href="">Contacto</a>
+        </div>
+      </div>
 
       <div class="cnt_central">
-        <div class="title">
+        <h1 class="title">
           PREGUNTAS FRECUENTES
-        </div>
+        </h1>
         <div class="contenidopf">
           <div class="botonespf">
             <button class="botonpfc active" data-cat="1">Hogares</button>
@@ -594,21 +601,36 @@
         });
       });
 
-
       let coll = document.querySelectorAll(".collapsiblepf");
-      let i;
+
+      $(coll).click(function(){
+        if($(this).hasClass('active')){
+          $(coll).removeClass('active');
+          $(coll).next().slideUp();
+        }else{
+          $(coll).removeClass('active');
+          $(coll).next().slideUp();
+          $(this).toggleClass('active');
+          $(this).next().slideToggle();
+        } 
+        
+      });
+
+
+
+      /* let i;
 
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function () {
           this.classList.toggle("active");
           let content = this.nextElementSibling;
           if (content.style.display === "block") {
-            content.style.display = "none";
+            content.style.display = "none";    
           } else {
             content.style.display = "block";
           }
         });
-      }
+      } */
 
 
     });
