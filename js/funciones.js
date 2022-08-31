@@ -100,6 +100,42 @@ $(document).ready(function () {
 
         })
     })
+
+
+    /* FUNCION ARROWS FOOTER */
+
+    if ($(window).width() < 768) {
+        function navFooter(){
+        
+            let btn = document.querySelectorAll('.h_cl_pie');
+            let container = document.querySelectorAll('.menu_pie');
+            
+            $(btn).click( function(){
+    
+                if( $(btn).hasClass('active') ){
+                    $(container).slideUp();
+                    $(btn).removeClass('active');
+                }else{
+                    $(container).slideUp();
+                    $(btn).removeClass('active');
+                    $(this).addClass('active');
+                    $(this).next().slideToggle(400);
+                }
+    
+            });
+    
+        }
+    
+        navFooter();
+     }
+     else {
+       
+     }
+
+  
+
+    
+    
 });
 
 

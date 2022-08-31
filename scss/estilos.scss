@@ -1374,6 +1374,7 @@ a.jp-disabled:hover {
 .col_mid_men_pie{
   width: 22%;
   text-align: left;
+  position: relative;
 }
 .col_susc_pie{
   width:28%;
@@ -1385,6 +1386,12 @@ a.jp-disabled:hover {
   color: #000;
   font-weight: bold;
   padding-bottom: 12px;
+  &.active{
+    &:before{
+      transition: 300ms ease-out;
+      transform: rotate(180deg);
+    }
+  }
 }
 .menu_pie{
   width: 100%;
@@ -3332,6 +3339,14 @@ form.form {
 
 
 @media screen and (max-width: 1200px) {
+
+    /* ESTILOS FOOTER */
+    .cnt_mid_pie{
+      column-gap: 16px;
+    }
+    .cnt_lat_pie{
+      padding: 42px 28px 44px 20px;
+    }
 }
 @media screen and (max-width: 1050px) {
   .reglas {
@@ -3378,6 +3393,31 @@ form.form {
 
   .container_fechas .desc_fechas .txt_fechas{
     padding: 30px;
+  }
+
+  /* ESTILOS FOOTER */
+
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .cnt_lat_pie{
+    position: initial;
+    width: 100%;
+  }
+  .cnt_mid_pie{
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .cnt_bot_pie{
+    position: initial;
+    padding: 20px;
+  }
+  .col_mid_men_pie, .col_susc_pie{
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3614,6 +3654,39 @@ form.form {
   }
   .container_fechas .desc_fechas picture{
     max-height: 350px;
+  }
+
+/*   ESTILOS FOOTER */
+  .cnt_mid_pie{
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  .cnt_bot_pie{
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  .copyr_pie{
+    font-size: 12px;
+  }
+  .menu_pie{
+    display: none;
+  }
+  .h_cl_pie{
+    &::before{
+      content: '\F106';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 20px;
+      height: 20px;
+      font-family: 'Font Awesome 5 Free';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 @media screen and (max-width: 480px) {
