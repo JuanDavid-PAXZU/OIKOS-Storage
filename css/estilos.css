@@ -1793,7 +1793,7 @@ a.jp-disabled:hover {
 }
 
 .s_pqr {
-  padding: 100px 0 0;
+  padding: 50px 0 0;
 }
 
 .titleseriespqr {
@@ -1819,7 +1819,6 @@ a.jp-disabled:hover {
 .contenidoPTSBC {
   border-radius: 2px;
   text-align: left;
-  margin-top: 30px;
   padding: 0 0 80px;
 }
 
@@ -1891,12 +1890,6 @@ a.jp-disabled:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.contenidorgto,
-.contenidopol {
-  margin-top: 40px;
-  margin: 52px 5%;
 }
 
 .textorgto {
@@ -2327,6 +2320,9 @@ a.jp-disabled:hover {
 /* ESTILOS INTERNA CONTACTO */
 .frame1contacto {
   position: relative;
+}
+.frame1contacto .miga a, .frame1contacto .miga span {
+  color: #FFF;
 }
 
 .bg {
@@ -3580,7 +3576,7 @@ form.form {
   }
   /* INTERNA PQR */
   .s_pqr {
-    padding: 60px 0 0;
+    padding: 20px 0 0;
   }
 }
 @media screen and (max-width: 768px) {
