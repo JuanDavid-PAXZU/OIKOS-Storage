@@ -4281,6 +4281,9 @@ form.form {
   }
 }
 @media screen and (max-width: 768px) {
+  .cnt_central {
+    width: 90%;
+  }
   .fecharticulo {
     margin-top: 10px;
   }
