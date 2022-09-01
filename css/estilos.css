@@ -3904,7 +3904,7 @@ form.form {
   object-position: center;
 }
 
-#map {
+.s_map_sedes #map {
   position: relative;
   height: 0;
   overflow: hidden;
