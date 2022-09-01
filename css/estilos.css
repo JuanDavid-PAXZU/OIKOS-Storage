@@ -4641,6 +4641,17 @@ form.form {
     margin: 0;
     padding: 40px 0 16px;
   }
+  .c_despliegue_sedes .card {
+    scroll-snap-align: center;
+    flex: none;
+    width: 100%;
+    max-width: 320px;
+    margin: 8px 4%;
+  }
+  .c_despliegue_sedes .card.central {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .card {
     scroll-snap-align: center;
     flex: none;
