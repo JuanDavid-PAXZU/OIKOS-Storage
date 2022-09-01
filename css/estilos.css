@@ -4236,10 +4236,19 @@ form.form {
     padding: 16px 0;
   }
   .cnt_slider_textm {
-    padding: 0 64px 32px;
+    padding: 24px 64px;
   }
   .cnt_inf_testm {
     padding: 0 16px;
+  }
+  .cnt_banner_punos {
+    flex-flow: column;
+  }
+  .img_banner_puntos {
+    width: 100%;
+  }
+  .h_banner_calcula {
+    font-size: 22px;
   }
   /****************/
   /*  ESTILOS INTERNA SEDES */
