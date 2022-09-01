@@ -4836,6 +4836,30 @@ form.form {
   }
 }
 @media screen and (max-width: 480px) {
+  /****** HOME *******/
+  .txt_izq_arboles {
+    font-size: 24px;
+  }
+  .txt_izq_arboles b {
+    font-size: 30px;
+  }
+  .h_lat {
+    font-size: 22px;
+  }
+  .title {
+    margin-bottom: 24px;
+  }
+  .cnt_inf_testm {
+    padding: 0;
+  }
+  .txt_testm {
+    font-size: 14px;
+  }
+  .comillas_testm {
+    width: 35px;
+    height: 35px;
+  }
+  /**********/
   .bg {
     grid-row: 1/2;
     grid-column: 1/3;
