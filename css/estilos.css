@@ -2195,7 +2195,8 @@ a.jp-disabled:hover {
 }
 
 .card {
-  width: 376px;
+  width: 100%;
+  max-width: 376px;
   display: flex;
   flex-direction: column;
   background: #ffffff;
@@ -3836,6 +3837,9 @@ form.form {
 .c_buscador_sedes button {
   outline: 0;
   border: 0;
+  width: 100%;
+  max-width: 230px;
+  min-width: initial;
 }
 .c_buscador_sedes .title {
   margin: 0;
@@ -3886,6 +3890,8 @@ form.form {
 .c_banner_calc_space picture {
   display: inline-block;
   max-height: 286px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .c_banner_calc_space picture img {
@@ -3911,6 +3917,7 @@ form.form {
   gap: 20px;
   padding: 30px;
   box-sizing: border-box;
+  text-align: left;
 }
 .cont_banner_calc_space h2 {
   font-size: 30px;
@@ -3925,6 +3932,7 @@ form.form {
 .c_despliegue_sedes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
   gap: 30px;
 }
 
@@ -4245,6 +4253,19 @@ form.form {
   .cont_slider {
     width: 100%;
     max-width: 100%;
+  }
+  /* ESTILOS PAG SEDES */
+  .s_buscador_sedes {
+    margin: 30px 0 0;
+  }
+  .c_banner_calc_space {
+    gap: 10px;
+  }
+  .c_banner_calc_space div {
+    font-size: 14px;
+  }
+  .cont_banner_calc_space {
+    padding: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -4592,6 +4613,40 @@ form.form {
   .aside_sede .form {
     margin: 0 0 30px;
   }
+  /* ESTILOS PAG SEDES */
+  .c_despliegue_sedes {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .c_buscador_sedes {
+    grid-template-columns: 1fr;
+    justify-items: flex-start;
+    gap: 10px;
+  }
+  .c_buscador_sedes .cont_input {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 10px;
+  }
+  .c_buscador_sedes .title {
+    border: 0;
+    widows: 100%;
+  }
+  #map {
+    max-height: 430px;
+    min-height: 430px;
+  }
+  .c_buscador_sedes button {
+    width: 100%;
+    max-width: initial;
+  }
+  .c_buscador_sedes {
+    padding: 20px;
+  }
+  .c_banner_calc_space {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (max-width: 480px) {
   .bg {
@@ -4803,5 +4858,10 @@ form.form {
   }
   .title_sede {
     margin: 30px 0;
+  }
+  /* ESTILOS PAG SEDES */
+  .c_despliegue_sedes {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }/*# sourceMappingURL=estilos.css.map */
