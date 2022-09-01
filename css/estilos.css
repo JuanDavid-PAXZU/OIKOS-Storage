@@ -3833,16 +3833,66 @@ form.form {
   padding: 30px;
   box-sizing: border-box;
 }
+.c_buscador_sedes button {
+  outline: 0;
+  border: 0;
+}
 .c_buscador_sedes .title {
   margin: 0;
   padding: 0;
+  border-right: 1px solid #d2d2d2;
 }
 .c_buscador_sedes .title::before {
   display: none;
 }
 
+.cont_input {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+.cont_input select {
+  height: 56px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #d2d2d2;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .s_map_sedes {
   margin: -40px 0 0;
+}
+
+.s_banner_calc_space {
+  margin: -40px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.c_banner_calc_space {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
+}
+.c_banner_calc_space picture {
+  display: inline-block;
+  max-height: 286px;
+  overflow: hidden;
+}
+.c_banner_calc_space picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 #map {
@@ -3851,6 +3901,61 @@ form.form {
   overflow: hidden;
   max-height: 500px;
   min-height: 550px;
+}
+
+.cont_banner_calc_space {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.cont_banner_calc_space h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.cont_banner_calc_space a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.c_despliegue_sedes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.s_despliegue_sedes {
+  margin: 30px 0;
+}
+.s_despliegue_sedes .holder {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  margin: 40px 0;
+}
+.s_despliegue_sedes .holder a {
+  border: 1px solid #000;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  opacity: 1;
+  font-size: 18px;
+  font-weight: 700;
+}
+.s_despliegue_sedes .holder a.jp-disabled {
+  opacity: 0.4;
+}
+.s_despliegue_sedes .holder a.jp-current {
+  background-color: #000;
+  color: #FFF;
 }
 
 /* *********** */
