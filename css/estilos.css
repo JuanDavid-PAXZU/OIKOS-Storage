@@ -4895,10 +4895,10 @@ form.form {
   .textopqr {
     margin-left: 40px;
   }
-  .contpqr {
-    flex-direction: column;
-    align-items: center;
-  }
+  /*   .contpqr {
+      flex-direction: column;
+      align-items: center;
+    } */
   .contenidogr {
     flex-direction: column;
     justify-content: center;
