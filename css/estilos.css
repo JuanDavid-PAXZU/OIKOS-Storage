@@ -1225,6 +1225,9 @@ a.jp-disabled:hover {
 .cnt_slider_textm .swiper-button-next:hover {
   background: #f4f4f4;
 }
+.cnt_slider_textm .swiper-slide {
+  height: auto;
+}
 
 .cnt_inf_testm {
   width: 100%;
