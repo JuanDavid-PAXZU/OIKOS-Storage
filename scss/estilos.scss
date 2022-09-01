@@ -3148,7 +3148,7 @@ form.form {
   }
 }
 
-/* INTERNA SEDE */
+/* ESTILOS INTERNA SEDES */
 
 .bg_sede{
   background-attachment: fixed;
@@ -3187,8 +3187,8 @@ form.form {
 .c_sede{
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 100px;
-  padding: 120px 0 0;
+  gap: 40px;
+  padding: 0px 0 0;
   box-sizing: border-box;
   align-items: stretch;
 }
@@ -3239,7 +3239,7 @@ form.form {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  margin: 0 0 50px;
+  margin: 90px 0 40px;
   h5{
     font-size: 22px;
     font-weight: 400;
@@ -3331,7 +3331,7 @@ form.form {
 }
 
     /* SWIPER SLIDER SEDE */
-/* 
+
     .swiper {
       width: 100%;
       height: 300px;
@@ -3345,26 +3345,58 @@ form.form {
     }
 
     .swiperSedes-thumb {
-      height: 80px;
-      width: 100%;
+      height: 100px;
+      width: 80%;
+      transform: translateY(-60px);
+      z-index: 2;
+      position: relative;
+      box-sizing: border-box;
+      overflow: hidden;
+      .swiper-slide{
+        box-shadow: 0px 12px 12px -5px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        overflow: hidden;
+      }
     }
 
     .swiperSede {
       height: 20%;
       box-sizing: border-box;
-      padding: 10px 0;
-
+      position: relative;
+      width: 100%;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.685), rgba(255, 255, 255, 0));
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
     }
 
     .swiperSede .swiper-slide {
       width: 100%;
       height: 100%;
+
+      max-height: 430px;
+      overflow: hidden;
+    }
+    .swiperSedes-thumb .swiper-slide{
+      background-color: #000;
+    }
+    .swiperSedes-thumb .swiper-slide img{
       opacity: 0.4;
     }
-
-    .swiperSede .swiper-slide-thumb-active {
+    .swiperSedes-thumb .swiper-slide-thumb-active img{
       opacity: 1;
     }
+/*     .swiperSede .swiper-slide-thumb-active {
+      opacity: 1;
+    } */
 
     .swiper-slide img {
       display: block;
@@ -3373,19 +3405,21 @@ form.form {
       object-fit: cover;
     }
 
-*/
+.contenido_sede{
+  max-width: 680px;
+}
 
 .cont_slider{
   position: relative;
-  max-width: 800px;
   overflow: hidden;
   background-color: #FFF;
+  width: 100%;
 } 
 
 
 .txt_desc_sede{
   text-align: left;
-  padding: 60px;
+  padding: 0 60px 60px;
   box-sizing: border-box;
 }
 
@@ -3410,9 +3444,220 @@ form.form {
   }
 }
 
+.card_pregunta_sede{
+  background: #FFFFFF;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin: 0 0 20px;
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.0);
+  &.shadow{
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  }
+  .tit_pregunta{
+    &.active{
+      color: #000000;
+      span{
+        transform: rotate(180deg);
+      }
+    }
+  }
+  span{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms ease-out;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    left: -14px;
+    bottom: 0;
+    border-top: 16px solid transparent;
+    border-right: 14px solid #FFF;
+    z-index: 1;
+  }
+  .tit_pregunta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #666666;
+  }
+  h3{
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .respuesta_sede{
+    padding: 20px 0 0;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 0 30px 30px;
+    box-sizing: border-box;
+    transition: none;
+    display: none;
+  }
+}
+
+.banner_publi{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 180px;
+  background: #000000;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 60px 0 40px;
+  .texto_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #FFF;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 6px;
+    h5{
+      font-size: 18px;
+      font-weight: 400;
+    }
+    h2{
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+  picture{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      background: linear-gradient(89.99deg, #000000 0.01%, rgba(0, 0, 0, 0) 99.99%);
+      width: 80px;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+  }
+}
 
 
-
+.otra_sede_zona{
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 9px 10px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  margin: 0 0 20px;
+  overflow: hidden;
+  max-height: 230px;
+  &:hover{
+    .btn_link{
+      background-color: var(--c_link);
+    }
+    img{
+      transform: scale(1.05);
+    }
+  }
+  >a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-height: 230px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 300ms ease-out ;
+    }
+  }
+  .desc_sede_zona{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .btn_link{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #d2d2d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: 700;
+    gap: 10px;
+    min-height: 50px;
+    span{
+      font-weight: 600;
+    }
+  }
+  .datos_sede{
+    padding: 20px 50px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    color: #666666;
+    h4{
+      color: #000000;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+.swiperSede{
+  position: relative;
+  max-height: 430px;
+}
+.swiperSede .swiper-button-next, .swiperSede .swiper-button-prev{
+ top: initial;
+ bottom: 10px;
+ border: 1px solid #FFF;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 40px;
+ height: 40px;
+ &:hover{
+  background-color: rgba(255, 255, 255, 0.263)
+ }
+ span{
+  color: #FFF;
+ }
+}
+.swiperSede .swiper-button-prev{
+  transform: rotate(180deg);
+}
+.swiperSede .swiper-button-next, .swiperSede .swiper-container-rtl .swiper-button-prev, .swiperSede .swiper-button-prev, .swiperSede .swiper-container-rtl .swiper-button-prev{
+  background-image: none;
+}
 
 /* *********** */
 /* RESPONSIVE  */
@@ -3442,6 +3687,18 @@ form.form {
       padding: 0 68px;  
     }
 
+    /*  ESTILOS INTERNA SEDES */
+
+    .c_sede{
+      gap: 40px;
+      grid-template-columns: 1.5fr 1fr;
+    }
+    .cont_slider{
+      max-width: 680px;
+    }
+    .aside_sede .form{
+      padding: 30px;
+    }
 }
 @media screen and (max-width: 1050px) {
   /* ESTILOS HEADER */
@@ -3702,6 +3959,19 @@ form.form {
   }
   
   /****************/ 
+  /*  ESTILOS INTERNA SEDES */
+
+  .c_sede{
+    display: flex;
+    flex-direction: column;
+  }
+  .contenido_sede{
+    max-width: 100%;
+  }
+  .cont_slider{
+    width: 100%;
+    max-width: 100%;
+  }
 
 }
 @media screen and (max-width: 768px) {
@@ -4067,6 +4337,38 @@ form.form {
     max-width: none;
     margin-bottom: 16px;
   }
+
+  /* ESTILOS INTERNA SEDES */
+
+
+
+  .ventajas_sede .card_ventaja{
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .otra_sede_zona{
+    grid-template-columns: 1fr 1fr;
+  }
+  .otra_sede_zona .datos_sede{
+    padding: 30px;
+  }
+
+  .txt_desc_sede{
+    padding: 30px;
+  }
+  .cont_ctas{
+    padding: 0 30px 30px;
+/*     flex-direction: column; */
+    gap: 10px;
+  }
+  .cont_ctas .btn{
+    font-size: 16px;
+    min-width: initial;
+  }
+  .aside_sede .form{
+    margin: 0 0 30px;
+  }
 }
 @media screen and (max-width: 480px) {
   .bg {
@@ -4253,5 +4555,60 @@ form.form {
     margin: 0 6px;
   }
   /**********/
+  /* ESTILOS INTERNA SEDES */
 
+  .cont_ctas{
+    flex-direction: column;
+    .btn{
+      width: 100%;
+    }
+  }
+  .card_pregunta_sede .respuesta_sede{
+    padding: 0 20px 20px;
+  }
+  .card_pregunta_sede .tit_pregunta{
+    padding: 20px;
+    gap: 20px;
+  }
+  .aside_sede .form{
+    padding: 30px;
+  }
+  .c_sede{
+    padding: 20px 0 0;
+  }
+  .otra_sede_zona .datos_sede{
+    padding: 20px;
+    gap: 0;
+  }
+  .otra_sede_zona{
+    grid-template-columns: 1fr 2fr;
+  }
+  .card_pregunta_sede .respuesta_sede{
+    font-size: 14px;
+  }
+  .ventajas_sede{
+    grid-template-columns: 1fr;
+  }
+  .txt_desc_sede{
+    font-size: 14px;
+    padding: 0 20px 0;
+  }
+  .cont_ctas{
+    padding: 0 20px 20px;
+  }
+  .swiperSede .swiper-slide{
+    max-height: 230px;
+  }
+  .swiperSede .swiper-button-next, .swiperSede .swiper-button-prev{
+    width: 30px;
+    height: 30px;
+  }
+  .swiperSedes-thumb{
+    width: 70%;
+    height: 80px;
+    transform: translateY(-45px);
+  }
+  .title_sede{
+    margin: 30px 0;
+  }
 }
