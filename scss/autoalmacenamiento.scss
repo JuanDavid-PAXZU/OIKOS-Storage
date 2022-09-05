@@ -144,7 +144,10 @@ margin-bottom: 20px;
     box-sizing: border-box;
     .txt_desc{
         max-width: 780px;
-        margin: 0 auto;
+        margin: 0 auto 50px;
+    }
+    .title{
+        margin-bottom: 40px;
     }
 }
 
@@ -156,7 +159,6 @@ margin-bottom: 20px;
     .items_razon{
         text-align: left;
         position: relative;
-        margin: 40px 0 0;
         padding-left: 20px;
         box-sizing: border-box;
         &::before{
@@ -169,5 +171,27 @@ margin-bottom: 20px;
             background: url('../images/diseno/items.svg') no-repeat center;
             background-size: contain;
         }   
+    }
+}
+.frame2pqr{
+    position: relative;
+    .cnt_central{
+        z-index: 1;
+    }
+}
+.frame2pqr::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    backdrop-filter: grayscale(1);
+    z-index: 1;
+}
+
+.fix_autoalmacenamiento{
+    padding-bottom: 100px;
+    .cnt_banner_calcula{
+        margin-top: 70px;
     }
 }
