@@ -1,3 +1,24 @@
+.s_hero_calcula_espacio {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(255, 140, 140, 0) 100%), url("../images/diseno/bg_img_hero_calcula.jpg") no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 0 40px;
+  box-sizing: border-box;
+}
+.s_hero_calcula_espacio .c_hero_calcula_espacio {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: left;
+  align-items: center;
+  color: #FFF;
+  padding: 100px 0 80px;
+  height: 100%;
+}
+.s_hero_calcula_espacio h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
 .c_cotiza_espacio {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -78,6 +99,55 @@
 }
 .cont_form_cotiza .btn {
   margin: 20px 0 0;
+}
+
+.c_capacidad_bodega .desc {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tabs_bodegas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cnt_tabs_bodegas {
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+.btn_tab {
+  padding: 8px 24px;
+  font-weight: 600;
+  color: #808080;
+  box-sizing: border-box;
+  background: transparent;
+  border-top: 1px solid #d2d2d2;
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  transition: 300ms ease-out;
+}
+.btn_tab:hover {
+  background: #d2d2d2;
+}
+.btn_tab.active {
+  background-color: #000;
+  color: #FFF;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.s_container_tabs {
+  display: none;
+}
+.s_container_tabs.active {
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {
