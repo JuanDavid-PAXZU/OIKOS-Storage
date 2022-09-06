@@ -21,7 +21,7 @@ $(document).ready(function () {
     }
 
     /****slider hero****/
-    var swiper = new Swiper(".slider_banner .swiper-container", {
+    let swiper = new Swiper(".slider_banner .swiper-container", {
         simulateTouch: false,
         navigation: {
           nextEl: ".slider_banner .swiper-button-next",
@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     /****slyder testimonios home****/
 
-    var swiper = new Swiper(".cnt_slider_textm .swiper-container", {
+    let swiper = new Swiper(".cnt_slider_textm .swiper-container", {
         simulateTouch: false,
         navigation: {
           nextEl: ".cnt_slider_textm .swiper-button-next",
@@ -47,10 +47,10 @@ $(document).ready(function () {
         $('a[href*=\\#]').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
                 location.hostname == this.hostname) {
-                var $target = $(this.hash);
+                let $target = $(this.hash);
                 $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
                 if ($target.length) {
-                    var targetOffset = $target.offset().top;
+                    let targetOffset = $target.offset().top;
                     $('html,body').animate({
                         scrollTop: targetOffset
                     }, 1000);
@@ -65,11 +65,11 @@ $(document).ready(function () {
     if ($(window).width() >= 1200) {
 
         $.fn.isInViewport = function() {
-           var elementTop = $(this).offset().top;
-           var elementBottom = elementTop + $(this).outerHeight();
+           let elementTop = $(this).offset().top;
+           let elementBottom = elementTop + $(this).outerHeight();
     
-           var viewportTop = $(window).scrollTop();
-           var viewportBottom = viewportTop + $(window).height();
+           let viewportTop = $(window).scrollTop();
+           let viewportBottom = viewportTop + $(window).height();
     
            return elementBottom > viewportTop && elementTop < viewportBottom;
          };
@@ -122,7 +122,7 @@ $(document).ready(function () {
     })
 
     /* SWIPER MINIBODEGAS */
-    var swiper = new Swiper(".slide_mtr_bodegas .swiper-container", {
+    let swiper = new Swiper(".slide_mtr_bodegas .swiper-container", {
         
         spaceBetween: 0,
         watchSlidesProgress: true,
@@ -136,7 +136,7 @@ $(document).ready(function () {
             
         },
     });
-    var swiper2 = new Swiper(".slide_bodega .swiper-container", {
+    let swiper2 = new Swiper(".slide_bodega .swiper-container", {
         spaceBetween: 0,
         simulateTouch:false,
         navigation: {
@@ -149,7 +149,7 @@ $(document).ready(function () {
     });
 
     /* SWIPER GALERIA CLIENTES */
-    var swiper = new Swiper(".cnt_gal_n_clien .swiper-container", {
+    let swiper = new Swiper(".cnt_gal_n_clien .swiper-container", {
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
