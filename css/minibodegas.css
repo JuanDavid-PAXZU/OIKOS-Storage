@@ -169,7 +169,7 @@
   box-sizing: border-box;
   padding: 32px 56px;
   display: flex;
-  column-gap: 2%;
+  column-gap: 4%;
   justify-content: space-between;
   list-style-image: url(../images/diseno/minibidegas/vineta.svg);
   flex-wrap: wrap;
@@ -178,4 +178,126 @@
   width: 48%;
   text-align: left;
   padding: 16px 0;
+  list-style-position: unset;
+  box-sizing: border-box;
+}
+
+.s_calc_esp_minib {
+  width: 100%;
+  background: #f4f4f4;
+  padding-bottom: 32px;
+}
+
+.s_gris_bodegas {
+  width: 100%;
+  background: #f4f4f4;
+  padding: 72px 0 100px;
+}
+
+.cnt_gen_slide_bodegas {
+  width: 100%;
+  padding-top: 64px;
+}
+
+.cnt_gen_dimen_slide_bodegas {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.etq_dimen_bodegas {
+  font-size: 20px;
+  color: #000;
+  padding-right: 40px;
+}
+
+.slide_mtr_bodegas {
+  flex-grow: 1;
+}
+.slide_mtr_bodegas .swiper-slide {
+  height: auto;
+}
+
+.mtr_bodega {
+  font-size: 20px;
+  color: #666;
+  padding: 8px 16px;
+  text-align: center;
+  max-width: 80px;
+  cursor: pointer;
+}
+.mtr_bodega:hover {
+  background: #fff;
+}
+
+.cnt_bl_slide_bodega {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.slide_bodega {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 8%;
+}
+.slide_bodega .swiper-slide {
+  height: auto;
+}
+
+.cnt_gen_inf_bodega {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col_img_bodega {
+  width: 77%;
+  max-width: 650px;
+  border-right: 1px solid #ccc;
+  position: relative;
+}
+
+.col_inf_bodega {
+  width: 26%;
+  text-align: left;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  padding: 110px 0 80px;
+  padding-left: 5%;
+}
+
+.pie_img_bodega {
+  width: 100%;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.h_bodega_sl {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  padding-bottom: 36px;
+  position: relative;
+}
+.h_bodega_sl:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 76px;
+  height: 4px;
+  background: var(--c_pri);
+}
+
+.mts_bodega_sl {
+  width: 100%;
+  font-size: 30px;
+  color: #666;
 }/*# sourceMappingURL=minibodegas.css.map */
