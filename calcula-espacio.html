@@ -422,6 +422,33 @@
     <script src="js/classie.js"></script>
     <script src="js/funciones.js"></script>
 
+    <script>
+        const btn_tab = document.querySelectorAll('.tabs_bodegas .btn_tab');
+        const containerTab = document.querySelectorAll('.s_container_tabs');
+        let compare = null;
+
+        btn_tab.forEach((btn) =>{
+            btn.addEventListener('click', (e) => {
+                
+                btn_tab.forEach((btn2) => {
+                    btn2.classList.remove('active');
+                });
+                e.currentTarget.classList.add('active');
+
+                compare = e.currentTarget.dataset.categoria;
+
+                containerTab.forEach((container) => {
+
+                    if( container.dataset.categoria === compare ){
+                        container.classList.add('active');
+                    }else{
+                        container.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
