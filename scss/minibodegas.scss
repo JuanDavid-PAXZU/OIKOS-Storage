@@ -309,6 +309,11 @@
 }
 .cnt_gal_n_clien{
   width: 100%;
+  .swiper-slide {
+    img{
+      display: block;
+    }
+  }
   .swiper-container{
     padding: 64px 0;
   }

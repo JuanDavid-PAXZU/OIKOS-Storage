@@ -344,6 +344,9 @@
 .cnt_gal_n_clien {
   width: 100%;
 }
+.cnt_gal_n_clien .swiper-slide img {
+  display: block;
+}
 .cnt_gal_n_clien .swiper-container {
   padding: 64px 0;
 }
