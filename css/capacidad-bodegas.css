@@ -1,0 +1,124 @@
+.c_capacidad_bodega .desc {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tabs_bodegas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cnt_tabs_bodegas {
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+.btn_tab {
+  padding: 8px 24px;
+  font-weight: 600;
+  color: #808080;
+  box-sizing: border-box;
+  background: transparent;
+  border-top: 1px solid #d2d2d2;
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  border-radius: 8px 8px 0 0;
+  margin: 0 0 40px;
+  cursor: pointer;
+  transition: 300ms ease-out;
+}
+.btn_tab:hover {
+  background: #d2d2d2;
+}
+.btn_tab.active {
+  background-color: #000;
+  color: #FFF;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.s_container_tabs {
+  display: none;
+  background: #FFF;
+}
+.s_container_tabs.active {
+  display: flex;
+}
+
+.frame2pqr {
+  position: relative;
+}
+.frame2pqr .cnt_central {
+  z-index: 1;
+}
+
+.frame2pqr::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  backdrop-filter: grayscale(1);
+  z-index: 1;
+}
+
+.s_tips_consejos {
+  padding: 65px 0 85px;
+}
+
+.c_tips_consejos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.card_tips {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  text-align: left;
+  max-width: 450px;
+  width: 100%;
+  justify-self: center;
+}
+.card_tips picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 57px;
+}
+.card_tips img {
+  width: 100%;
+  height: 100%;
+  min-width: 57px;
+  object-fit: contain;
+}
+.card_tips h5 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.card_tips .txt_tip {
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+  .btn_tab {
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .card_tips {
+    gap: 20px;
+  }
+  .c_tips_consejos {
+    grid-template-columns: 1fr;
+  }
+  .card_tips {
+    max-width: initial;
+  }
+}/*# sourceMappingURL=capacidad-bodegas.css.map */
