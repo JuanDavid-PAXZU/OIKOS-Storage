@@ -129,6 +129,9 @@
   box-sizing: border-box;
   padding: 72px 64px;
   text-align: left;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 .cnt_inf_porque_minib .h_lat {
   max-width: inherit;
@@ -216,6 +219,10 @@
 }
 .slide_mtr_bodegas .swiper-slide {
   height: auto;
+  width: 80px;
+}
+.slide_mtr_bodegas .swiper-slide.swiper-slide-thumb-active .mtr_bodega {
+  background: #fff;
 }
 
 .mtr_bodega {
@@ -241,9 +248,35 @@
   width: 100%;
   box-sizing: border-box;
   padding: 0 8%;
+  position: relative;
 }
 .slide_bodega .swiper-slide {
   height: auto;
+}
+.slide_bodega .swiper-button-prev {
+  transform: rotate(180deg);
+  left: 4%;
+}
+.slide_bodega .swiper-button-next {
+  right: 4%;
+}
+.slide_bodega .swiper-button-prev, .slide_bodega .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #D6D6D6;
+  background: transparent;
+  text-align: center;
+}
+.slide_bodega .swiper-button-prev span, .slide_bodega .swiper-button-next span {
+  color: #D6D6D6;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+}
+.slide_bodega .swiper-button-prev:hover,
+.slide_bodega .swiper-button-next:hover {
+  background: #f4f4f4;
 }
 
 .cnt_gen_inf_bodega {
@@ -300,4 +333,131 @@
   width: 100%;
   font-size: 30px;
   color: #666;
+}
+
+@media screen and (max-width: 1050px) {
+  .col_vid_inf iframe {
+    min-height: 200px;
+  }
+  .cnt_inf_porque_minib {
+    padding: 32px;
+  }
+  .cnt_inf_porque_minib .h_lat {
+    font-size: 24px;
+    padding-top: 0;
+  }
+  .cnt_gen_que_almacenar {
+    padding-bottom: 0;
+  }
+  .s_gris_bodegas {
+    padding: 24px 0 64px;
+  }
+  .cnt_gen_slide_bodegas {
+    padding-top: 0;
+  }
+  .cnt_lis_que_almc {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .slide_bodega {
+    padding: 0;
+  }
+  .slide_bodega .swiper-button-prev {
+    transform: rotate(180deg);
+    left: 1%;
+  }
+  .slide_bodega .swiper-button-next {
+    right: 1%;
+  }
+  .col_img_bodega {
+    width: 60%;
+  }
+  .col_inf_bodega {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 32px 6%;
+  }
+  .col_inf_bodega .btn {
+    min-width: inherit;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .pie_img_bodega {
+    box-sizing: border-box;
+    padding: 0 24px;
+  }
+  .h_bodega_sl {
+    font-size: 24px;
+  }
+  .slide_mtr_bodegas {
+    width: 60%;
+  }
+  .cnt_gen_vid_inf {
+    flex-flow: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .s_top_bg_for {
+    height: auto;
+    padding-top: 56px;
+  }
+  .cnt_top_form {
+    flex-flow: column;
+    gap: 24px;
+  }
+  .h_top_form {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+  .col_vid_inf iframe {
+    min-height: 230px;
+    height: 48vw;
+  }
+  .cnt_inf_porque_minib .h_lat {
+    font-size: 20px;
+  }
+  .cnt_gen_que_almacenar, .cnt_lis_que_almc {
+    flex-flow: column;
+  }
+  .cnt_lis_que_almc {
+    box-sizing: border-box;
+    padding: 24px 0 0 24px;
+  }
+  .cnt_lis_que_almc li {
+    width: 100%;
+    padding: 12px 0;
+  }
+  .cnt_gen_inf_bodega {
+    flex-flow: column;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .col_img_bodega {
+    width: 100%;
+    border: none;
+  }
+  .col_inf_bodega {
+    box-sizing: border-box;
+    width: 100%;
+    gap: 24px;
+  }
+  .h_bodega_sl {
+    padding-bottom: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cnt_gen_dimen_slide_bodegas {
+    flex-flow: column;
+  }
+  .etq_dimen_bodegas {
+    width: 100%;
+    padding: 0;
+  }
+  .slide_mtr_bodegas {
+    width: 100%;
+  }
+  .mtr_bodega {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=minibodegas.css.map */

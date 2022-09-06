@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     /****slyder testimonios home****/
 
-    let swiper2 = new Swiper(".cnt_slider_textm .swiper-container", {
+    var swiper = new Swiper(".cnt_slider_textm .swiper-container", {
         simulateTouch: false,
         navigation: {
           nextEl: ".cnt_slider_textm .swiper-button-next",
@@ -120,42 +120,57 @@ $(document).ready(function () {
 
         })
     })
+    /* SWIPER MINIBODEGAS */
 
+    var swiper = new Swiper(".slide_mtr_bodegas .swiper-container", {
+        
+        spaceBetween: 0,
+        watchSlidesProgress: true,
+        slidesPerView: 'auto',
+        breakpoints: {
+            768:{
+                slidesPerView: 4,
+            },
+            
+        },
+    });
+    var swiper2 = new Swiper(".slide_bodega .swiper-container", {
+        spaceBetween: 0,
+        simulateTouch:false,
+        navigation: {
+            nextEl: ".slide_bodega .swiper-button-next",
+            prevEl: ".slide_bodega .swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
 
     /* FUNCION ARROWS FOOTER */
 
-    if ($(window).width() < 768) {
-        function navFooter(){
+    function navFooter(){
+    
+        let btn = document.querySelectorAll('.col_mid_men_pie .h_cl_pie');
+        let container = document.querySelectorAll('.menu_pie');
         
-            let btn = document.querySelectorAll('.h_cl_pie');
-            let container = document.querySelectorAll('.menu_pie');
-            
-            $(btn).click( function(){
-    
-                if( $(btn).hasClass('active') ){
-                    $(container).slideUp();
-                    $(btn).removeClass('active');
-                }else{
-                    $(container).slideUp();
-                    $(btn).removeClass('active');
-                    $(this).addClass('active');
-                    $(this).next().slideToggle(400);
-                }
-    
-            });
-    
-        }
-    
+        $(btn).click( function(){
+
+            if( $(this).hasClass('active') ){
+                $(this).next(container).slideUp();
+                $(this).removeClass('active');
+            }else{
+                $(container).slideUp();
+                $(btn).removeClass('active');
+                $(this).addClass('active');
+                $(this).next().slideToggle();
+            }
+
+        });
+
+    }
+
+    if ($(window).width() < 768) {
         navFooter();
-     }
-     else {
-       
-     }
-
-  
-
-    
+    }
     
 });
-
-
