@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"calcula-espacio.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/calcula-espacio.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACI;EACA;EACA;EACA;EACA;EACA;;AACA;EACI;EACA;EACA;EACA;EACA;EACA;;AAGR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACI;EACA;EACA","file":"calcula-espacio.css"}
