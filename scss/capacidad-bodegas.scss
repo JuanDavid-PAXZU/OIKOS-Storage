@@ -27,7 +27,6 @@
     border-left: 1px solid #d2d2d2;
     border-right: 1px solid #d2d2d2;
     border-radius: 8px 8px 0 0;
-    margin: 0 0 40px;
     cursor: pointer;
     transition: 300ms ease-out;
     &:hover{
@@ -42,10 +41,17 @@
     }
 }
 .s_container_tabs{
-    display: none;
+    display: flex;
     background: #FFF;
+
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
     &.active{
-        display: flex;
+      opacity: 1;
+      display: flex;
+      position: relative;
+      z-index: 1;
     }
 }
 
@@ -103,6 +109,153 @@
     }
 }
 
+
+/* CAPACIDAD BODEGAS */
+
+.s_gris_bodegas{
+    width: 100%;
+    background: #f4f4f4;
+    padding: 0;
+.title{
+    margin-bottom: 0;
+}
+  }
+  .cnt_gen_slide_bodegas{
+    width: 100%;
+  }
+  .cnt_gen_dimen_slide_bodegas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .etq_dimen_bodegas{
+    font-size: 20px;
+    color: #000;
+    padding-right: 40px;
+  }
+  .slide_mtr_bodegas{
+    flex-grow: 1;
+    .swiper-slide{
+      height: auto;
+      width: 80px;
+      &.swiper-slide-thumb-active{
+        .mtr_bodega{
+          background: #fff;
+        }
+      }
+    }
+  }
+  .mtr_bodega{
+    font-size: 20px;
+    color: #666;
+    padding: 8px 16px;
+    text-align: center;
+    max-width: 80px;
+    cursor: pointer;
+    &:hover{
+        background: #fff;
+    }
+  }
+  .cnt_bl_slide_bodega{
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+  }
+  .slide_bodega{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding: 60px 8%;
+    .swiper-slide{
+      height: auto;
+    }
+    .swiper-button-prev {
+      transform: rotate(180deg);
+      left: 4%;
+    }
+    .swiper-button-next {
+      right: 4%;
+    }
+    .swiper-button-prev, .swiper-button-next {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid #D6D6D6;
+      background: transparent;
+      text-align: center;
+      span {
+        color: #D6D6D6;
+        line-height: 40px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+      background: #f4f4f4;
+    }
+  }
+  .cnt_gen_inf_bodega{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .col_img_bodega{
+    width: 77%;
+    max-width: 650px;
+    border-right: 1px solid #ccc;
+    position: relative;
+  }
+  .col_inf_bodega{
+    width: 26%;
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 110px 0 80px;
+    padding-left: 5%;
+  }
+  .pie_img_bodega{
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  .h_bodega_sl{
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 36px;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 76px;
+      height: 4px;
+      background: var(--c_pri);
+    }
+  }
+  .mts_bodega_sl{
+    width: 100%;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .bg_w{
+    background-color: #FFF;
+  }
+
+  .big_setion{
+    position: relative;
+    width: 100%;
+  }
+
+
 @media screen and (max-width:768px){
     .btn_tab{
         margin: 0;
@@ -118,4 +271,41 @@
     .card_tips{
         max-width: initial;
     }
+
+
+    .cnt_gen_inf_bodega{
+        flex-flow: column;
+        box-sizing: border-box;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .col_img_bodega{
+        width: 100%;
+        border: none;
+    }
+    .col_inf_bodega{
+        box-sizing: border-box;
+        width: 100%;
+        gap: 24px;
+    }
+    .h_bodega_sl{
+        padding-bottom: 16px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    .cnt_gen_dimen_slide_bodegas{
+        flex-flow: column;
+      }
+    .etq_dimen_bodegas{
+        width: 100%;
+        padding:0 ;
+      }
+      .slide_mtr_bodegas{
+        width: 100%;
+      }
+      .mtr_bodega{
+        font-size: 16px;
+      }
 }
