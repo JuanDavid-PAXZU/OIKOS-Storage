@@ -120,16 +120,18 @@ $(document).ready(function () {
 
         })
     })
-    /* SWIPER MINIBODEGAS */
 
+    /* SWIPER MINIBODEGAS */
     var swiper = new Swiper(".slide_mtr_bodegas .swiper-container", {
         
         spaceBetween: 0,
         watchSlidesProgress: true,
         slidesPerView: 'auto',
+        touchRatio:0,
         breakpoints: {
             768:{
                 slidesPerView: 4,
+                touchRatio:1,
             },
             
         },
@@ -144,6 +146,37 @@ $(document).ready(function () {
         thumbs: {
             swiper: swiper,
         },
+    });
+
+    /* SWIPER GALERIA CLIENTES */
+    var swiper = new Swiper(".cnt_gal_n_clien .swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 4,
+        initialSlide: 2,
+        coverflowEffect: {
+          rotate: 45,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        navigation: {
+            nextEl: ".cnt_gal_n_clien .swiper-button-next",
+            prevEl: ".cnt_gal_n_clien .swiper-button-prev",
+        },
+        breakpoints: {
+            1050:{
+                slidesPerView: 3,
+            },
+            768:{
+                slidesPerView: 2,
+            },
+            480:{
+                slidesPerView: 1,
+            },
+        }
     });
 
     /* FUNCION ARROWS FOOTER */
