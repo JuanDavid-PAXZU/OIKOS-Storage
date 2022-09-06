@@ -125,10 +125,17 @@
 
         <section class="s_top_bg_for" style="background-image: url(images/diseno/bg_autoalmacenamiento.jpg);">
             <div class="cnt_central">
+                
+                <div class="miga cw">
+                    <a href="">OIKOS Storager</a>
+                    <span> > </span>
+                    <a href="">Quienes somos</a>
+                </div>
+
                 <div class="cnt_top_form">
                     <div class="cnt_inf_top_form">
                         <div class="h_top_form mb-2">
-                            Autoalmacenamiento
+                            Auto almacenamiento
                         </div>
                         <div class="txt_top_form">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
@@ -260,6 +267,70 @@ When an unknown printer took a galley of type and scrambled it to make a type sp
         </section>
 
         <!-- SECCION OTROS USOS -->
+
+        <section class="s_otros_usos bg_w">
+            <div class="cnt_central">
+                <h2 class="title">
+                    otros usos
+                </h2>
+                <div class="desc">
+                    Para almacenar tu menaje por una opción de translado por trabajo o estudios en el exterior o en otra ciudad
+                </div>
+                <div class="c_otros_usos">
+
+                    <!-- Swiper -->
+                    <div class="swiper swiperOtrosUsos">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                                <div class="cont_tit_usos">
+                                    <picture>
+                                        <img width="52" height="52" src="images/diseno/negocios_icon.svg" alt="">
+                                    </picture>
+                                    <h3 class="title al_left">
+                                        negocios
+                                    </h3>
+                                </div>
+                                <ul class="cont_items_usos">
+                                    <li>Almacenar mercancía y activos fijos</li>
+                                    <li>Historial de archivos</li>
+                                    <li>Herramientas y mobiliario</li>
+                                    <li>Productos de temporada</li>
+                                    <li>productos delicados y de cuidados especiales</li>
+                                </ul>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="cont_tit_usos">
+                                    <picture>
+                                        <img width="52" height="52" src="images/diseno/negocios_icon.svg" alt="">
+                                    </picture>
+                                    <h3 class="title al_left">
+                                        negocios
+                                    </h3>
+                                </div>
+                                <ul class="cont_items_usos">
+                                    <li>Almacenar mercancía y activos fijos</li>
+                                    <li>Historial de archivos</li>
+                                    <li>Herramientas y mobiliario</li>
+                                    <li>Productos de temporada</li>
+                                    <li>productos delicados y de cuidados especiales</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <span class="material-icons">arrow_right_alt</span>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <span class="material-icons">arrow_right_alt</span>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
 
         <!-- SECCION SEDES DESTACADAS -->
 
@@ -546,6 +617,15 @@ When an unknown printer took a galley of type and scrambled it to make a type sp
     <script src="plugins/Swiper/swiper.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/funciones.js"></script>
+
+    <script>
+        var swiper = new Swiper(".c_otros_usos .swiperOtrosUsos", {
+          navigation: {
+            nextEl: ".c_otros_usos .swiper-button-next",
+            prevEl: ".c_otros_usos .swiper-button-prev",
+          },
+        });
+    </script>
 
 </body>
 

@@ -1573,6 +1573,7 @@ a.jp-disabled:hover {
   width: 100%;
   font-size: 14px;
   list-style: none;
+  transition: none;
 }
 .menu_pie li {
   width: 100%;
