@@ -1112,8 +1112,11 @@ a.jp-disabled:hover {
   border-radius: 3px;
   box-sizing: border-box;
   padding: 8px 12px;
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
+}
+.campo_form::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #808080;
 }
 
 .gris_med_home {
@@ -4754,6 +4757,9 @@ form.form {
   }
   .img_banner {
     height: 200px;
+  }
+  .img_banner:before {
+    background: rgba(0, 0, 0, 0.4);
   }
   .cnt_gen_inf_banner {
     position: relative;

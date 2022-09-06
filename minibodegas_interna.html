@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,  user-scalable=no">
+    <title>Oikos Storage</title>
+
+    <link rel="stylesheet" href="plugins/Swiper/swiper.min.css">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="css/minibodegas.css" rel="stylesheet" type="text/css">
+
+    <!-- TIPOGRAFIA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- ICON FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+    <!-- libreria jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- para mapa -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="topbar_h">
+            <div class="cnt_central">
+                <div class="cnt_inf_topbar_h">
+                    <div class="cnt_logos_h">
+                        <div class="logo_h">
+                            <img src="images/diseno/logo_grupo.svg" alt="">
+                        </div>
+                        <div class="logo_h">
+                            <img src="images/diseno/logo_constructora.svg" alt="">
+                        </div>
+                        <div class="logo_h">
+                            <img src="images/diseno/logo_inmobiliaria.svg" alt="">
+                        </div>
+                    </div>
+                    <a href="" class="btn_z_clientes">
+                        Zona de Clientes
+                    </a>
+                    <a href="" class="btn_pse">
+                        <div class="txt_pse">Pague aquí</div>
+                        <span class="ic_pse"></span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="cnt_h_bar">
+            <div class="cnt_central">
+                <h1 class="logo_prin">
+                    <a href="">
+                        Oikos Storage
+                    </a>
+                </h1>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a  class="link_despl">
+                                Mini bodegas
+                                <span class="dspl_ic material-icons">expand_more</span>
+                            </a>                            
+                            <ul class="submenu">
+                                <li>
+                                    <a href="">Hogares</a>
+                                </li>
+                                <li>
+                                    <a href="">Negocios</a>
+                                </li>
+                                <li>
+                                    <a href="">Empresas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Autoalmacenamiento</a>
+                        </li>
+                        <li>
+                            <a href="">Sedes</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>                   
+                        <li>
+                            <a class="link_despl">
+                                Contacto
+                                <span class="dspl_ic material-icons">expand_more</span>
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="">Contacto</a>
+                                </li>
+                                <li>
+                                    <a href="">PQRS</a>
+                                </li>
+                            </ul>
+                        </li>   
+                        <a class="btn_med">
+                            <span class="material-icons">calculate</span>
+                            Calcula tu espacio
+                        </a>                
+                    </ul>
+                </nav>
+                <div class="btn_menu_movil">
+                    <span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+            </div>      
+        </div>
+    </header>
+
+    <main class="cuerpo">
+
+        <!-- SECCION HERO -->
+
+       <section class="s_top_bg_for" style="background-image: url(images/diseno/minibidegas/bg_minib_hogar.jpg);">
+            <div class="cnt_central">
+                <div class="cnt_top_form">
+                    <div class="cnt_inf_top_form">
+                        <div class="h_top_form">
+                            Bodegas para hogares
+                        </div>
+                        <div class="txt_top_form">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            <br/><br/>
+                            When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                    </div>
+                    <div class="cnt_form_top_minb">
+                        <form action="" class="form_top">
+                            <div class="cnt_campo_form">
+                                <input type="text" class="campo_form" placeholder="Nombre"/>
+                            </div>
+                            <div class="cnt_campo_form">
+                                <input type="tel" class="campo_form" placeholder="Teléfono"/>
+                            </div>
+                            <div class="cnt_campo_form">
+                                <input type="email" class="campo_form" placeholder="Correo"/>
+                            </div>
+                            <div class="captcha"></div>
+                            <div class="cnt_chek_form">
+                                <input type="checkbox"/>
+                                <label class="etq_check_form">
+                                    Acepto y Autorizo la <a href="">Política de Tratamiento de Datos</a>
+                                </label>
+                            </div>
+                            <div class="btn">
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+        <!-- SECCION GRIS -->
+
+        <section class="s_gris_minib_int">
+            <div class="cnt_central">
+
+                <!-- Porqué tener una minibodega -->
+                <div class="cnt_gen_vid_inf">
+                    <div class="col_vid_inf">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Sn4v4rzoXqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col_vid_inf">
+                        <div class="cnt_inf_porque_minib">
+                            <div class="h_lat">
+                                ¿Porqué tener una minibodega para el hogar?
+                            </div>
+                            <div class="txt_porque_minib">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<br/>
+                                When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SERVICIOS COMPLEMENTARIOS -->
+                <div class="cnt_gen_inf_ventajas">
+                    <div class="h_lat h_int">
+                        SERVICIOS COMPLEMENTARIOS
+                    </div>
+                    <div class="cnt_list_ventajas">
+                        <div class="itm_ventajas in_top act_anim">
+                            <span class="ic_vent">
+                                <img src="images/diseno/ic_ventajas_1.svg" alt="">
+                            </span>
+                            <div class="h_ventaja">
+                                Vigilancia 24/7
+                            </div>
+                        </div>
+                        <div class="itm_ventajas in_top act_anim">
+                            <span class="ic_vent">
+                                <img src="images/diseno/ic_ventajas_2.svg" alt="">
+                            </span>
+                            <div class="h_ventaja">
+                                Vigilancia 24/7
+                            </div>
+                        </div>
+                        <div class="itm_ventajas in_top act_anim">
+                            <span class="ic_vent">
+                                <img src="images/diseno/ic_ventajas_3.svg" alt="">
+                            </span>
+                            <div class="h_ventaja">
+                                Vigilancia 24/7
+                            </div>
+                        </div>
+                        <div class="itm_ventajas in_top act_anim">
+                            <span class="ic_vent">
+                                <img src="images/diseno/ic_ventajas_4.svg" alt="">
+                            </span>
+                            <div class="h_ventaja">
+                                Vigilancia 24/7
+                            </div>
+                        </div>
+                        <div class="itm_ventajas in_top act_anim">
+                            <span class="ic_vent">
+                                <img src="images/diseno/ic_ventajas_5.svg" alt="">
+                            </span>
+                            <div class="h_ventaja">
+                                Vigilancia 24/7
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SERVICIOS COMPLEMENTARIOS -->
+                <div class="cnt_gen_que_almacenar">
+                    <div class="h_lat h_int">
+                        ¿QUÉ PUEDES ALMACENAR?
+                    </div>
+                    <div class="cnt_txt_que_almc">
+                        <div class="txt_1_que_almc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+                        <ul class="cnt_lis_que_almc">
+                            <li>Making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</li>
+                            <li>looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word.</li>
+                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCION CALCULA TU ESPACIO -->
+
+        <section class="s_calc_esp_minib">
+            <div class="cnt_central">
+
+                <!--  CALCULA TU ESPACIO -->
+                <div class="cnt_banner_calcula">
+                    <div class="inf_banner_calc">
+                        <div class="h_banner_calcula">CALCULA TU ESPACIO</div>
+                        <div class="txt_banner_calcula">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC
+                        </div>
+                        <a href="" class="btn_med">
+                            <span class="material-icons">calculate</span>
+                            Calcula tu espacio
+                        </a>   
+                    </div>
+                    <div class="img_banner_cal">
+                        <img src="images/diseno/img_banner_calcula.png" alt="">
+                    </div>
+                </div>
+                <!--  ********** -->
+            </div>
+        </section>
+
+        <!-- SECCION SEDES -->
+
+        <section class="frame2pqr">
+            <div class="cnt_central">
+              <div class="titleseriespqr">
+                SEDES DESTACADAS
+                <div class="salto"></div>
+              </div>
+              <div class="contpqr">
+                <div class="card">
+                  <div class="imgcardpqrs">
+                    <img src="images/diseno/card1pqrs.png" alt="">
+                  </div>
+                  <div class="infocardpqrs">
+                    <div class="textocard">
+                      <div class="ciudadpqrs">Bogotá</div>
+                      <div class="sedepqrs">Sede Cedritos</div>
+                      <div class="direccionpqrs">Calle 155 bis # 7-23</div>
+                    </div>
+                    <div>
+                      <button class="botonwazepqrs">
+                        <img src="images/diseno/botonwaze.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="botoncardpqrs">
+                    <button class="botoncard">
+                      Conocer sede<img src="images/diseno/iconpqr.png" alt="">
+                    </button>
+                  </div>
+                </div>
+                <div class="card central">
+                  <div class="imgcardpqrs">
+                    <img src="images/diseno/card2pqrs.png" alt="">
+                  </div>
+                  <div class="infocardpqrs">
+                    <div class="textocard">
+                      <div class="ciudadpqrs">Bogotá</div>
+                      <div class="sedepqrs">Sede Cedritos</div>
+                      <div class="direccionpqrs">Calle 155 bis # 7-23</div>
+                    </div>
+                    <div>
+                      <button class="botonwazepqrs">
+                        <img src="images/diseno/botonwaze.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <button class="botoncard">
+                    Conocer sede<img src="images/diseno/iconpqr.png" alt="">
+                  </button>
+                </div>
+                <div class="card">
+                  <div class="imgcardpqrs">
+                    <img src="images/diseno/card3pqrs.png" alt="">
+                  </div>
+                  <div class="infocardpqrs">
+                    <div class="textocard">
+                      <div class="ciudadpqrs">Bogotá</div>
+                      <div class="sedepqrs">Sede Cedritos</div>
+                      <div class="direccionpqrs">Calle 155 bis # 7-23</div>
+                    </div>
+                    <div>
+                      <button class="botonwazepqrs">
+                        <img src="images/diseno/botonwaze.png" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <button class="botoncard">
+                    Conocer sede<img src="images/diseno/iconpqr.png" alt="">
+                  </button>
+                </div>
+              </div>
+      
+              <div class="">
+                <button class="botonpqr">Conoce nuestras sedes</button>
+              </div>
+            </div>
+        </section>
+        
+        <!-- SECCION NUESTRAS MINIBODEGAS -->
+
+        <section class="s_gris_bodegas">
+            <div class="cnt_central">
+                <div class="title">
+                    NUESTRAS MINIBODEGAS PARA EL HOGAR
+                </div>
+
+                <div class="cnt_gen_slide_bodegas">
+                    <div class="cnt_gen_dimen_slide_bodegas">
+                        <label class="etq_dimen_bodegas">
+                            Dimensiones
+                        </label>
+                        <div class="slide_mtr_bodegas">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="mtr_bodega">
+                                            1m<sup>3</sup>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mtr_bodega">
+                                            2m<sup>3</sup>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mtr_bodega">
+                                            5m<sup>3</sup>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mtr_bodega">
+                                            8m<sup>3</sup>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mtr_bodega">
+                                            10m<sup>3</sup>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cnt_bl_slide_bodega">
+                        <div class="slide_bodega">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="cnt_gen_inf_bodega">
+                                            <div class="col_img_bodega">
+                                                <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                <div class="pie_img_bodega">
+                                                    *Esta es una representación artística de nuestras mini bodegas
+                                                </div>
+                                            </div>
+                                            <div class="col_inf_bodega">
+                                                <div class="h_bodega_sl">
+                                                    MEDIDAS MINIBODEGA
+                                                </div>
+                                                <div class="mts_bodega_sl">
+                                                    15m<sup>3</sup>
+                                                </div>
+                                                <a href="" class="btn">
+                                                    Cotiza tu bodega
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cnt_gen_inf_bodega">
+                                            <div class="col_img_bodega">
+                                                <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                <div class="pie_img_bodega">
+                                                    *Esta es una representación artística de nuestras mini bodegas
+                                                </div>
+                                            </div>
+                                            <div class="col_inf_bodega">
+                                                <div class="h_bodega_sl">
+                                                    MEDIDAS MINIBODEGA
+                                                </div>
+                                                <div class="mts_bodega_sl">
+                                                    15m<sup>3</sup>
+                                                </div>
+                                                <a href="" class="btn">
+                                                    Cotiza tu bodega
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cnt_gen_inf_bodega">
+                                            <div class="col_img_bodega">
+                                                <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                <div class="pie_img_bodega">
+                                                    *Esta es una representación artística de nuestras mini bodegas
+                                                </div>
+                                            </div>
+                                            <div class="col_inf_bodega">
+                                                <div class="h_bodega_sl">
+                                                    MEDIDAS MINIBODEGA
+                                                </div>
+                                                <div class="mts_bodega_sl">
+                                                    15m<sup>3</sup>
+                                                </div>
+                                                <a href="" class="btn">
+                                                    Cotiza tu bodega
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cnt_gen_inf_bodega">
+                                            <div class="col_img_bodega">
+                                                <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                <div class="pie_img_bodega">
+                                                    *Esta es una representación artística de nuestras mini bodegas
+                                                </div>
+                                            </div>
+                                            <div class="col_inf_bodega">
+                                                <div class="h_bodega_sl">
+                                                    MEDIDAS MINIBODEGA
+                                                </div>
+                                                <div class="mts_bodega_sl">
+                                                    15m<sup>3</sup>
+                                                </div>
+                                                <a href="" class="btn">
+                                                    Cotiza tu bodega
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cnt_gen_inf_bodega">
+                                            <div class="col_img_bodega">
+                                                <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                <div class="pie_img_bodega">
+                                                    *Esta es una representación artística de nuestras mini bodegas
+                                                </div>
+                                            </div>
+                                            <div class="col_inf_bodega">
+                                                <div class="h_bodega_sl">
+                                                    MEDIDAS MINIBODEGA
+                                                </div>
+                                                <div class="mts_bodega_sl">
+                                                    15m<sup>3</sup>
+                                                </div>
+                                                <a href="" class="btn">
+                                                    Cotiza tu bodega
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next">
+                                <span class="material-icons">arrow_right_alt</span>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <span class="material-icons">arrow_right_alt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    
+
+    <footer class="footer">
+        <div class="cnt_lat_pie">
+            <div class="cnt_gen_inf_lat_pie">
+                <div class="cnt_logos_pie">
+                    <div class="logo_pie">
+                        <img src="images/diseno/logo_grupo.svg" alt="">
+                    </div>
+                    <div class="logo_pie">
+                        <img src="images/diseno/logo_constructora.svg" alt="">
+                    </div>
+                    <div class="logo_pie">
+                        <img src="images/diseno/logo_storage.svg" alt="">
+                    </div>
+                    <div class="logo_pie">
+                        <img src="images/diseno/logo_avaluos.svg" alt="">
+                    </div>
+                    <div class="logo_pie">
+                        <img src="images/diseno/logo_inmobiliaria.svg" alt="">
+                    </div>
+                </div>
+                <div class="txt_pie">
+                    OIKOS Empresa Inmobiliaria en Bogotá: encuentra tu hogar con uno de los mejores portales inmobiliarios en Colombia. Tenemos un amplio portafolio de inmuebles para venta o arriendo, además podrás consignar tu inmueble y contar con todo nuestro respaldo y seguridad.
+                </div>
+                <div class="cnt_gen_cert_pie">
+                    <div class="logo_cert_pie">
+                        <img src="images/diseno/logo_verias.png" alt="">
+                    </div>
+                    <div class="logo_cert_pie">
+                        <img src="images/diseno/logo_fenalco.png" alt="">
+                    </div>
+                    <div class="logo_cert_pie">
+                        <img src="images/diseno/logo_co2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cnt_mid_pie">
+            <div class="col_mid_men_pie">
+                <div class="h_cl_pie">
+                    Storage
+                </div>
+                <ul class="menu_pie">
+                    <li>
+                        <a href="">
+                            Hogares
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Negocios
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Empresas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Autoalmacenamiento
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Proveedores
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Extractos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col_mid_men_pie">
+                <div class="h_cl_pie">
+                    Navegación
+                </div>
+                <ul class="menu_pie">
+                    <li>
+                        <a href="">
+                            Preguntas frecuentes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Capacidad minibodegas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Quiénes somos 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Reglamento
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Puntos Colombia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Trabaja con nosotros
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col_mid_men_pie">
+                <div class="h_cl_pie">
+                    Legal
+                </div>
+                <ul class="menu_pie">
+                    <li>
+                        <a href="">
+                            Términos y condiciones promociones
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Términos y conodiciones cotizaciones
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Políticas de tratamiento de datos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col_susc_pie">
+                <div class="h_cl_pie">
+                    Newsletter
+                </div>
+
+                <div class="cnt_gen_susc_pie">
+                    <div class="txt_susc_pie">
+                        Escribe tu e-mail para mantenerte al tanto de nuestra información
+                    </div>
+                    <form action="" class="form_susc">
+                        <input type="email" class="campo_susc_pie" placeholder="aquí tu e-mail"/>
+                        <input type="submit" class="bnt_susc">
+                    </form>
+                </div>
+                <div class="datos_pie">
+                    <div>
+                        Carrera 16 a #78 - 55 (piso 1)
+                    </div>
+                    <div>
+                        316 471 3388 - 651 6141
+                    </div>
+                    <div>
+                        servicioalcliente@oikos-storage.com
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cnt_bot_pie">
+            <div class="cnt_redes_pie">
+                <div class="red_pie ic_fb"></div>
+                <div class="red_pie ic_tw"></div>
+                <div class="red_pie ic_in"></div>
+                <div class="red_pie ic_yt"></div>
+                <div class="red_pie ic_ig"></div>
+            </div>
+            <div class="copyr_pie">
+                ©OIKOS STORAGE 2022. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+    
+    <script src="plugins/Swiper/swiper.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/funciones.js"></script>
+
+</body>
+
+</html>

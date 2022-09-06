@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     /****slyder testimonios home****/
 
-    let swiper2 = new Swiper(".cnt_slider_textm .swiper-container", {
+    var swiper = new Swiper(".cnt_slider_textm .swiper-container", {
         simulateTouch: false,
         navigation: {
           nextEl: ".cnt_slider_textm .swiper-button-next",
@@ -120,7 +120,31 @@ $(document).ready(function () {
 
         })
     })
+    /* SWIPER MINIBODEGAS */
 
+    var swiper = new Swiper(".slide_mtr_bodegas .swiper-container", {
+        
+        spaceBetween: 0,
+        watchSlidesProgress: true,
+        slidesPerView: 'auto',
+        breakpoints: {
+            768:{
+                slidesPerView: 4,
+            },
+            
+        },
+    });
+    var swiper2 = new Swiper(".slide_bodega .swiper-container", {
+        spaceBetween: 0,
+        simulateTouch:false,
+        navigation: {
+            nextEl: ".slide_bodega .swiper-button-next",
+            prevEl: ".slide_bodega .swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
 
     /* FUNCION ARROWS FOOTER */
 
@@ -150,5 +174,3 @@ $(document).ready(function () {
     }
     
 });
-
-

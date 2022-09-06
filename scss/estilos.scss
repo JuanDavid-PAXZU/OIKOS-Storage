@@ -971,8 +971,11 @@ a.jp-disabled:hover {
   border-radius: 3px;
   box-sizing: border-box;
   padding: 8px 12px;
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #808080;
+  }
 }
 .gris_med_home {
   width: 100%;
@@ -3448,6 +3451,7 @@ form.form {
   }
 }
 
+<<<<<<< HEAD
 .card_pregunta_sede{
   background: #FFFFFF;
   border-radius: 2px;
@@ -3464,6 +3468,32 @@ form.form {
       span{
         transform: rotate(180deg);
       }
+=======
+/* *********** */
+/* RESPONSIVE  */
+/* *********** */
+
+@media screen and (max-width: 1200px) {
+
+    /* ESTILOS HEADER */
+    .nav ul li{
+      margin: 0 14px;
+    }
+    .nav ul li a.link_despl{
+      padding-right: 30px;
+    }
+    /* ESTILOS FOOTER */
+    .cnt_mid_pie{
+      column-gap: 16px;
+    }
+    .cnt_lat_pie{
+      padding: 42px 28px 44px 20px;
+    }
+    /**** HOME ******/
+    .cnt_gen_inf_banner{
+      box-sizing: border-box;
+      padding: 0 68px;  
+>>>>>>> minibodegas
     }
   }
   span{
@@ -4465,6 +4495,7 @@ form.form {
     height: 50px;
   }
   /**** HOME ******/
+<<<<<<< HEAD
   .img_banner{
     height: 200px;
     &:before{
@@ -4681,8 +4712,13 @@ form.form {
   .autor{
     margin-top: 8px;
   }
+=======
+>>>>>>> minibodegas
   .img_banner{
     height: 200px;
+    &:before{
+      background: rgba(0,0,0,.4);
+    }
   }
   .cnt_gen_inf_banner{
     position: relative;  
@@ -4730,6 +4766,7 @@ form.form {
     max-width: none;
     margin-bottom: 16px;
   }
+<<<<<<< HEAD
 
   /* ESTILOS INTERNA SEDES */
 
@@ -4831,6 +4868,171 @@ form.form {
   }
   /**********/
   
+=======
+  .cnt_list_ventajas{
+    grid-template-columns: 2fr 2fr;
+    gap: 16px;
+  }
+  .cuadro_minb{
+    display: none !important;
+  }
+  .h_lat{
+    text-align: center;
+    &:after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .minib_home_single{
+    position:relative ;
+  }
+  .cnt_h_minib_home{
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  .minib_home_single{
+    &:before{
+      height: 100%;
+    }
+    &.minib_hogares, &.minib_home_single.minib_negocios, &.minib_home_single.minib_empresas{
+      transform: translate(0);
+      width: 100%;
+      max-width: 500px;
+      height: 200px;
+      top: inherit;
+      left: inherit;
+      right: inherit;
+      margin: 8px auto;
+    }
+  }
+  .frame2pqr{
+    .cnt_central{
+      width: 100%;
+    }
+  }
+  .contpqr{
+    flex-flow: row nowrap;
+    flex:none;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    margin: 0;
+    padding: 40px 0 16px; 
+  }
+  .card{
+    scroll-snap-align: center;
+    flex: none;
+    width: 80%;
+    max-width: 320px;
+    margin: 8px 4%;
+    &.central{
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .imgcardpqrs{
+    width: 100%;
+    height: 232px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .botonpqr{
+    margin: 24px 0 40px;
+  }
+  .s_mapa_home{
+    display: flex;
+    flex-flow: column-reverse;
+    padding:0;
+    .cnt_central{
+      width: 100%;
+    }
+  }
+  .cnt_mapa{
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: relative;
+    height: 300px;
+  }
+  .cnt_gen_inf_sedes_map{
+    width: 100%;
+    box-shadow: none;
+  }
+  .gris_med_home{
+    padding-bottom: 160px;
+  }
+  .cnt_banner_calcula{
+    margin-top: 16px;
+    flex-flow: column;
+  }
+  .inf_banner_calc{
+    width: 100%;
+    padding: 32px;
+  }
+  .img_banner_cal{
+    width: 100%;
+    img{
+      display: block;
+    }
+  }
+  .cnt_testm{
+    flex-flow: column;  
+  }
+  .cnt_slider_textm{
+    width: 100%;
+    min-height: 120px;
+    padding-bottom: 24px;
+  }
+  .medio_testm{
+    width: 100%;
+    height: 280px;
+  }
+  .cnt_not_home{
+    flex-flow: column;
+  }
+  .not_dest_home, .otra_not_home{
+    width: 100%;
+    margin: 8px 0;
+  }
+  .inf_not_dest_home{
+    background: #f4f4f4;
+    position: relative;
+  }
+  .inf_not_dest_home {
+    .fecha_nota,
+    .h_nota_nome,
+    .leer_mas_nota_home,
+    .autor_nota_home{
+      color: #000;
+    }
+  }
+  /********/
+
+  /* INTERNA NOTA‹ */
+  .saltonoticia{
+    margin: 10px 0;
+  }
+  .titlenoticia{
+    line-height: 1.2;
+  }
+  .autor{
+    margin-top: 8px;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  .btn{
+    font-size: 16px;
+    padding: 10px;
+    min-width: 200px;
+  }
+  .topbar_h .cnt_central{
+    width: 95%;
+  }
+>>>>>>> minibodegas
   .bg {
     grid-row: 1 / 2;
     grid-column: 1 / 3;
@@ -4857,11 +5059,14 @@ form.form {
     margin-left: 40px;
   }
 
+<<<<<<< HEAD
 /*   .contpqr {
     flex-direction: column;
     align-items: center;
   } */
 
+=======
+>>>>>>> minibodegas
   .contenidogr {
     flex-direction: column;
     justify-content: center;
@@ -5015,6 +5220,7 @@ form.form {
     margin: 0 6px;
   }
   /**********/
+<<<<<<< HEAD
   /* ESTILOS INTERNA SEDES */
 
   .cont_ctas{
@@ -5071,6 +5277,33 @@ form.form {
   .title_sede{
     margin: 30px 0;
   }
+=======
+  /****** HOME *******/
+  .txt_izq_arboles{
+    font-size: 24px;
+    b{
+      font-size: 30px;
+    }
+  }
+  .h_lat {
+    font-size: 22px;
+  }
+  .title{
+    margin-bottom: 24px;
+  }
+  .cnt_inf_testm{
+    padding: 0 ;
+  }
+  .txt_testm{
+    font-size: 14px;
+  }
+  .comillas_testm{
+    width: 35px;
+    height: 35px;
+  }
+  /**********/
+
+>>>>>>> minibodegas
 
     /* ESTILOS PAG SEDES */
 
