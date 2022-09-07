@@ -121,7 +121,7 @@ $(document).ready(function () {
         })
     })
 
-    /* SWIPER MINIBODEGAS */
+    /* SWIPER MINIBODEGAS 
     var swiper = new Swiper(".slide_mtr_bodegas .swiper-container", {
         
         spaceBetween: 0,
@@ -146,7 +146,89 @@ $(document).ready(function () {
         thumbs: {
             swiper: swiper,
         },
-    });
+    });*/
+    /* ***** SLIDER BODEGAS DENTRO DE TABS ***** */
+
+    function slider1(){
+        let swiper = new Swiper(".slide_mtr_bodegas.t1 .swiper-container", {
+    
+            spaceBetween: 0,
+            watchSlidesProgress: true,
+            slidesPerView: 'auto',
+            breakpoints: {
+                768:{
+                    slidesPerView: 4,
+                },
+                
+            },
+        });
+        let swiper2 = new Swiper(".slide_bodega.t1 .swiper-container", {
+            spaceBetween: 0,
+            simulateTouch:false,
+            navigation: {
+                nextEl: ".slide_bodega.t1 .swiper-button-next",
+                prevEl: ".slide_bodega.t1 .swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    }
+    function slider2(){
+        let swiper = new Swiper(".slide_mtr_bodegas.t2 .swiper-container", {
+    
+            spaceBetween: 0,
+            watchSlidesProgress: true,
+            slidesPerView: 'auto',
+            breakpoints: {
+                768:{
+                    slidesPerView: 4,
+                },
+                
+            },
+        });
+        let swiper2 = new Swiper(".slide_bodega.t2 .swiper-container", {
+            spaceBetween: 0,
+            simulateTouch:false,
+            navigation: {
+                nextEl: ".slide_bodega.t2 .swiper-button-next",
+                prevEl: ".slide_bodega.t2 .swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    }
+
+    function slider3(){
+        let swiper = new Swiper(".slide_mtr_bodegas.t3 .swiper-container", {
+    
+            spaceBetween: 0,
+            watchSlidesProgress: true,
+            slidesPerView: 'auto',
+            breakpoints: {
+                768:{
+                    slidesPerView: 4,
+                },
+                
+            },
+        });
+        let swiper2 = new Swiper(".slide_bodega.t3 .swiper-container", {
+            spaceBetween: 0,
+            simulateTouch:false,
+            navigation: {
+                nextEl: ".slide_bodega.t3 .swiper-button-next",
+                prevEl: ".slide_bodega.t3 .swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    }
+
+    slider1();
+    slider2();
+    slider3();
 
     /* SWIPER GALERIA CLIENTES */
     var swiper = new Swiper(".cnt_gal_n_clien .swiper-container", {

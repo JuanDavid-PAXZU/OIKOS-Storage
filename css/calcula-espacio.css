@@ -143,13 +143,457 @@
   border-right: 1px solid #000;
 }
 
-.s_container_tabs {
-  display: none;
+.big_setion {
+  position: relative;
+  width: 100%;
 }
-.s_container_tabs.active {
-  display: flex;
+.big_setion.calcula {
+  padding-bottom: 120px;
+}
+.big_setion.calcula .cnt_gen_slide_bodegas {
+  padding: 0;
 }
 
+.s_container_tabs {
+  width: 100%;
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.s_container_tabs.active {
+  opacity: 1;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.s_gen_calc_esp {
+  width: 100%;
+  background: #f4f4f4;
+  padding: 0 0 48px;
+}
+
+.cnt_pasos_calc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 2%;
+  margin-top: -40px;
+}
+
+.paso_calc {
+  width: 23%;
+  max-width: 208px;
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.num_paso_calc {
+  width: 74px;
+  height: 74px;
+  line-height: 74px;
+  background-color: var(--c_pri);
+  border-radius: 50%;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.txt_paso_calc {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.cnt_gen_calculador {
+  width: 100%;
+  display: flex;
+  padding: 100px 0 0;
+}
+
+.col_categoria_calculador {
+  width: 15%;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+}
+
+.list_categ_calc {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.itm_list_categ_calc {
+  flex-grow: 1;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  box-sizing: border-box;
+  padding: 16px 24px;
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.itm_list_categ_calc:last-child {
+  border-bottom: none;
+}
+.itm_list_categ_calc:hover {
+  color: #000;
+  background: var(--c_pri);
+}
+
+.col_articulos_calculador {
+  width: 20%;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+  padding: 20px 12px;
+  gap: 16px;
+}
+
+.h_art_calc {
+  width: 100%;
+  font-weight: 14px;
+  color: #000;
+  text-align: left;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 0 12px;
+}
+
+.cnt_list_art_calc {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  height: 290px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding-right: 6px;
+  flex-flow: column;
+}
+.cnt_list_art_calc::-webkit-scrollbar {
+  width: 4px;
+}
+.cnt_list_art_calc::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 4px;
+}
+.cnt_list_art_calc::-webkit-scrollbar-thumb {
+  background: var(--c_pri);
+  border-radius: 4px;
+}
+
+.itm_list_art_calc {
+  width: 100%;
+  display: flex;
+  column-gap: 16px;
+  box-sizing: border-box;
+  padding: 12px 0 12px 12px;
+  align-items: center;
+  cursor: pointer;
+}
+.itm_list_art_calc:hover {
+  background: var(--c_pri);
+}
+
+.ic_art_caclc {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ic_art_caclc img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.inf_art_calc {
+  flex-grow: 1;
+  font-size: 14px;
+  text-align: left;
+}
+.inf_art_calc span {
+  width: 100%;
+  display: block;
+}
+
+.col_bodega_calc {
+  width: 40%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  box-sizing: border-box;
+  padding: 16px 24px;
+  flex-flow: column;
+}
+
+.cnt_col_bodeg_inf {
+  width: 100%;
+  height: 100%;
+}
+
+.bodega_calc {
+  width: 100%;
+  height: 290px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 8px 0;
+  padding-right: 6px;
+}
+.bodega_calc::-webkit-scrollbar {
+  width: 4px;
+}
+.bodega_calc::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 4px;
+}
+.bodega_calc::-webkit-scrollbar-thumb {
+  background: var(--c_pri);
+  border-radius: 4px;
+}
+
+.grid_bodega_calc {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 16px;
+  row-gap: 8px;
+  box-sizing: border-box;
+  padding-right: 4px;
+}
+
+.itm_bodega_calc {
+  position: relative;
+  max-height: 70px;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px dashed transparent;
+  transition: 0.6s;
+}
+.itm_bodega_calc:hover {
+  border: 1px solid #ccc;
+}
+.itm_bodega_calc:hover .material-icons.quitar_art_bodega_calc {
+  pointer-events: inherit;
+  opacity: 1;
+}
+.itm_bodega_calc img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.material-icons.quitar_art_bodega_calc {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  font-size: 16px;
+  color: #EF6B6B;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+}
+.material-icons.quitar_art_bodega_calc:hover {
+  transform: scale(1.5);
+}
+
+.r_btn_eliminar_bod_calc {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+
+.btn_elim_bod_calc {
+  font-size: 16px;
+  color: #EF6B6B;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.btn_elim_bod_calc:hover {
+  transform: scale(1.1);
+}
+
+.material-icons.quitar_todo_bod {
+  font-size: 20px;
+  color: #EF6B6B;
+  margin-left: 8px;
+}
+
+.cnt_col_bodeg_noinf {
+  width: 100%;
+  height: 100%;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #808080;
+  box-sizing: border-box;
+  padding: 24px 16px;
+}
+
+.cnt_inf_no_art_bodega_calc {
+  width: 100%;
+  max-width: 278px;
+  display: flex;
+  flex-flow: column;
+}
+
+.ic_noinf_bodega {
+  width: 44px;
+  height: 50px;
+  padding: 12px 0;
+}
+.ic_noinf_bodega img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.txt_noinf_bodega {
+  font-size: 16px;
+  text-align: left;
+}
+
+.cnt_txt_noinf {
+  padding: 32px 0;
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+}
+.cnt_txt_noinf .material-icons {
+  transform: scaleX(-100%);
+}
+
+.col_res_calc {
+  width: 25%;
+  background: #000;
+  border-radius: 0 2px 2px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 48px;
+  box-sizing: border-box;
+  padding: 24px 32px;
+}
+.col_res_calc .btn {
+  width: 100%;
+  min-width: inherit;
+}
+
+.cnt_inf_res_calc {
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+}
+
+.r_dato_res_calc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.h_num_art_res_calc {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.etq_dato_res_calc {
+  width: 70%;
+  font-size: 20px;
+}
+
+.dato_res_calc {
+  width: 30%;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1050px) {
+  .s_hero_calcula_espacio .c_hero_calcula_espacio {
+    grid-template-columns: 1fr 1fr;
+    padding: 48px 0;
+  }
+  .cnt_gen_calculador {
+    flex-wrap: wrap;
+    padding-top: 32px;
+  }
+  .col_res_calc {
+    width: 100%;
+  }
+  .col_res_calc {
+    gap: 24px;
+  }
+  .cnt_inf_res_calc {
+    flex-flow: row;
+  }
+  .h_num_art_res_calc {
+    width: 26%;
+    align-items: stretch;
+    display: flex;
+    align-items: center;
+  }
+  .r_dato_res_calc {
+    width: 37%;
+    border-left: 1px solid;
+    box-sizing: border-box;
+    padding: 0 24px;
+  }
+  .col_categoria_calculador {
+    box-sizing: border-box;
+    width: 20%;
+  }
+  .col_articulos_calculador {
+    width: 30%;
+  }
+  .col_bodega_calc {
+    width: 50%;
+    border-right: 1px solid #ccc;
+  }
+  .grid_bodega_calc {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .itm_list_categ_calc {
+    padding: 16px;
+  }
+  .etq_dato_res_calc {
+    font-size: 16px;
+  }
+  .etq_dato_res_calc {
+    width: 65%;
+  }
+  .dato_res_calc {
+    width: 35%;
+  }
+  .itm_bodega_calc {
+    border-color: #ccc;
+    padding: 6px;
+  }
+  .material-icons.quitar_art_bodega_calc {
+    opacity: 1;
+    pointer-events: inherit;
+  }
+}
 @media screen and (max-width: 768px) {
   .c_cotiza_espacio {
     grid-template-columns: 1fr;
@@ -160,6 +604,53 @@
   .cont_form_cotiza {
     padding: 20px 0;
   }
+  .cnt_pasos_calc {
+    margin-top: -30px;
+  }
+  .num_paso_calc {
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+  }
+  .col_categoria_calculador {
+    width: 35%;
+  }
+  .col_articulos_calculador {
+    width: 65%;
+  }
+  .cnt_list_art_calc, .cnt_col_bodeg_noinf {
+    height: 200px;
+  }
+  .col_bodega_calc {
+    width: 100%;
+    border-left: 1px solid #ccc;
+    padding: 16px 12px;
+  }
+  .bodega_calc {
+    height: 200px;
+  }
+  .grid_bodega_calc {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .itm_bodega_calc {
+    height: 12vw;
+    max-height: none;
+  }
+  .cnt_txt_noinf .material-icons {
+    transform: rotate(-90deg);
+  }
+  .cnt_inf_res_calc {
+    flex-flow: column;
+    gap: 8px;
+  }
+  .h_num_art_res_calc {
+    width: 100%;
+  }
+  .r_dato_res_calc {
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .c_cotiza_espacio .cont_info_cotiza {
@@ -168,5 +659,26 @@
   .cont_form_cotiza form {
     padding: 20px;
     box-sizing: border-box;
+  }
+  .s_hero_calcula_espacio {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../images/diseno/bg_img_hero_calcula.jpg) no-repeat center right;
+    background-size: cover;
+  }
+  .s_hero_calcula_espacio .c_hero_calcula_espacio {
+    grid-template-columns: 1fr;
+    padding: 48px 0;
+  }
+  .txt_paso_calc {
+    font-size: 12px;
+  }
+  .col_categoria_calculador {
+    width: 38%;
+  }
+  .col_articulos_calculador {
+    width: 62%;
+  }
+  .itm_list_categ_calc {
+    padding: 8px;
+    font-size: 13px;
   }
 }/*# sourceMappingURL=calcula-espacio.css.map */

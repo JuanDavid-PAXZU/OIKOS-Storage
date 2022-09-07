@@ -402,6 +402,9 @@ a.jp-disabled:hover {
   height: 80px;
   background: #fff;
 }
+.cnt_h_bar .cnt_central {
+  height: 80px;
+}
 
 .logo_prin {
   width: 176px;
@@ -2858,11 +2861,10 @@ form.form {
   align-items: center;
   gap: 8px;
   position: relative;
-  z-index: 31;
 }
 .miga a {
   text-decoration: none;
-  color: #666666;
+  color: #ccc;
 }
 .miga a:hover {
   color: #000000;
@@ -3616,6 +3618,9 @@ form.form {
   margin: 0 0 20px;
   position: relative;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
+  /* *********** */
+  /* RESPONSIVE  */
+  /* *********** */
 }
 .card_pregunta_sede.shadow {
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
@@ -3625,6 +3630,29 @@ form.form {
 }
 .card_pregunta_sede .tit_pregunta.active span {
   transform: rotate(180deg);
+}
+@media screen and (max-width: 1200px) {
+  .card_pregunta_sede {
+    /* ESTILOS HEADER */
+    /* ESTILOS FOOTER */
+    /**** HOME ******/
+  }
+  .card_pregunta_sede .nav ul li {
+    margin: 0 14px;
+  }
+  .card_pregunta_sede .nav ul li a.link_despl {
+    padding-right: 30px;
+  }
+  .card_pregunta_sede .cnt_mid_pie {
+    column-gap: 16px;
+  }
+  .card_pregunta_sede .cnt_lat_pie {
+    padding: 42px 28px 44px 20px;
+  }
+  .card_pregunta_sede .cnt_gen_inf_banner {
+    box-sizing: border-box;
+    padding: 0 68px;
+  }
 }
 .card_pregunta_sede span {
   width: 20px;
@@ -4011,6 +4039,9 @@ form.form {
 @media screen and (max-width: 1050px) {
   /* ESTILOS HEADER */
   .cnt_h_bar {
+    height: 50px;
+  }
+  .cnt_h_bar .cnt_central {
     height: 50px;
   }
   .logo_prin {
@@ -4546,6 +4577,9 @@ form.form {
     align-items: center;
     height: 50px;
   }
+  .cnt_h_bar .cnt_central {
+    height: 50px;
+  }
   /**** HOME ******/
   .img_banner {
     height: 200px;
@@ -4893,6 +4927,161 @@ form.form {
     height: 35px;
   }
   /**********/
+  .cnt_list_ventajas {
+    grid-template-columns: 2fr 2fr;
+    gap: 16px;
+  }
+  .cuadro_minb {
+    display: none !important;
+  }
+  .h_lat {
+    text-align: center;
+  }
+  .h_lat:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .minib_home_single {
+    position: relative;
+  }
+  .cnt_h_minib_home {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  .minib_home_single:before {
+    height: 100%;
+  }
+  .minib_home_single.minib_hogares, .minib_home_single.minib_home_single.minib_negocios, .minib_home_single.minib_home_single.minib_empresas {
+    transform: translate(0);
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    margin: 8px auto;
+  }
+  .frame2pqr .cnt_central {
+    width: 100%;
+  }
+  .contpqr {
+    flex-flow: row nowrap;
+    flex: none;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    margin: 0;
+    padding: 40px 0 16px;
+  }
+  .card {
+    scroll-snap-align: center;
+    flex: none;
+    width: 80%;
+    max-width: 320px;
+    margin: 8px 4%;
+  }
+  .card.central {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .imgcardpqrs {
+    width: 100%;
+    height: 232px;
+  }
+  .imgcardpqrs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .botonpqr {
+    margin: 24px 0 40px;
+  }
+  .s_mapa_home {
+    display: flex;
+    flex-flow: column-reverse;
+    padding: 0;
+  }
+  .s_mapa_home .cnt_central {
+    width: 100%;
+  }
+  .cnt_mapa {
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: relative;
+    height: 300px;
+  }
+  .cnt_gen_inf_sedes_map {
+    width: 100%;
+    box-shadow: none;
+  }
+  .gris_med_home {
+    padding-bottom: 160px;
+  }
+  .cnt_banner_calcula {
+    margin-top: 16px;
+    flex-flow: column;
+  }
+  .inf_banner_calc {
+    width: 100%;
+    padding: 32px;
+  }
+  .img_banner_cal {
+    width: 100%;
+  }
+  .img_banner_cal img {
+    display: block;
+  }
+  .cnt_testm {
+    flex-flow: column;
+  }
+  .cnt_slider_textm {
+    width: 100%;
+    min-height: 120px;
+    padding-bottom: 24px;
+  }
+  .medio_testm {
+    width: 100%;
+    height: 280px;
+  }
+  .cnt_not_home {
+    flex-flow: column;
+  }
+  .not_dest_home, .otra_not_home {
+    width: 100%;
+    margin: 8px 0;
+  }
+  .inf_not_dest_home {
+    background: #f4f4f4;
+    position: relative;
+  }
+  .inf_not_dest_home .fecha_nota,
+.inf_not_dest_home .h_nota_nome,
+.inf_not_dest_home .leer_mas_nota_home,
+.inf_not_dest_home .autor_nota_home {
+    color: #000;
+  }
+  /********/
+  /* INTERNA NOTA‹ */
+  .saltonoticia {
+    margin: 10px 0;
+  }
+  .titlenoticia {
+    line-height: 1.2;
+  }
+  .autor {
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn {
+    font-size: 16px;
+    padding: 10px;
+    min-width: 200px;
+  }
+  .topbar_h .cnt_central {
+    width: 95%;
+  }
   .bg {
     grid-row: 1/2;
     grid-column: 1/3;
@@ -5103,6 +5292,30 @@ form.form {
   .title_sede {
     margin: 30px 0;
   }
+  /****** HOME *******/
+  .txt_izq_arboles {
+    font-size: 24px;
+  }
+  .txt_izq_arboles b {
+    font-size: 30px;
+  }
+  .h_lat {
+    font-size: 22px;
+  }
+  .title {
+    margin-bottom: 24px;
+  }
+  .cnt_inf_testm {
+    padding: 0;
+  }
+  .txt_testm {
+    font-size: 14px;
+  }
+  .comillas_testm {
+    width: 35px;
+    height: 35px;
+  }
+  /**********/
   /* ESTILOS PAG SEDES */
   .c_despliegue_sedes {
     grid-template-columns: 1fr;

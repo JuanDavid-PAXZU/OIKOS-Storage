@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="plugins/Swiper/swiper.min.css">
     <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/minibodegas.css">
     <link rel="stylesheet" href="css/calcula-espacio.css">
 
     <!-- TIPOGRAFIA -->
@@ -145,7 +146,260 @@
             </div>
         </section>
 
-        
+        <!-- SECCION CALCULADOR -->
+
+        <section class="s_gen_calc_esp">    
+            <div class="cnt_central">
+                <div class="cnt_pasos_calc">
+                    <div class="paso_calc">
+                        <div class="num_paso_calc">
+                            1
+                        </div>
+                        <div class="txt_paso_calc">
+                            Selecciona artículos
+                        </div>
+                    </div>
+                    <div class="paso_calc">
+                        <div class="num_paso_calc">
+                            2
+                        </div>
+                        <div class="txt_paso_calc">
+                            Calcula el espacio
+                        </div>
+                    </div>
+                    <div class="paso_calc">
+                        <div class="num_paso_calc">
+                            3
+                        </div>
+                        <div class="txt_paso_calc">
+                            Cotiza tu bodega
+                        </div>
+                    </div>
+                    <div class="paso_calc">
+                        <div class="num_paso_calc">
+                            4
+                        </div>
+                        <div class="txt_paso_calc">
+                            Almacena tus artículos
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cnt_gen_calculador">
+                    <div class="col_categoria_calculador">
+                        <div class="list_categ_calc">
+                            <div class="itm_list_categ_calc">
+                                Gimnasio hogar
+                            </div>
+                            <div class="itm_list_categ_calc">
+                                Habitación
+                            </div>
+                            <div class="itm_list_categ_calc">
+                                Oficina
+                            </div>
+                            <div class="itm_list_categ_calc">
+                                Electrodomésticos
+                            </div>
+                            <div class="itm_list_categ_calc">
+                                Muebles
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_articulos_calculador">
+                        <div class="h_art_calc">
+                            Artículos
+                        </div>
+                        <!-- contenido vacio -->
+                        <div class="cnt_col_bodeg_noinf" style="display: none;">
+                            <div class="cnt_inf_no_art_bodega_calc">
+                                <div class="cnt_txt_noinf">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                    <div class="txt_noinf_bodega">
+                                        Selecciona una <strong>categoría</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- contenido con seleccion -->
+                        <div class="cnt_list_art_calc" >
+                            <div class="itm_list_art_calc">
+                                <div class="ic_art_caclc">
+                                    <img src="images/diseno/calcula/sofa_4p.svg" alt="">
+                                </div>
+                                <div class="inf_art_calc">
+                                    <span>Sofá 4 puestos</span>
+                                    <span>2.5 m³</span>
+                                </div>
+                            </div>
+                            <div class="itm_list_art_calc">
+                                <div class="ic_art_caclc">
+                                    <img src="images/diseno/calcula/sofa_2p.svg" alt="">
+                                </div>
+                                <div class="inf_art_calc">
+                                    <span>Sofá 3 puestos</span>
+                                    <span>2 m³</span>
+                                </div>
+                            </div>
+                            <div class="itm_list_art_calc">
+                                <div class="ic_art_caclc">
+                                    <img src="images/diseno/calcula/alacena_un_cuerpo.svg" alt="">
+                                </div>
+                                <div class="inf_art_calc">
+                                    <span>Alacena sencilla</span>
+                                    <span>1 m³</span>
+                                </div>
+                            </div>
+                            <div class="itm_list_art_calc">
+                                <div class="ic_art_caclc">
+                                    <img src="images/diseno/calcula/alacena_dos_cuerpos.svg" alt="">
+                                </div>
+                                <div class="inf_art_calc">
+                                    <span>Alacena sencilla</span>
+                                    <span>1 m³</span>
+                                </div>
+                            </div>
+                            <div class="itm_list_art_calc">
+                                <div class="ic_art_caclc">
+                                    <img src="images/diseno/calcula/centro_entretenimiento.svg" alt="">
+                                </div>
+                                <div class="inf_art_calc">
+                                    <span>Centro de entretenimiento</span>
+                                    <span>2 m³</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_bodega_calc">
+                        <!-- contenido vacio -->
+                        <div class="cnt_col_bodeg_noinf" style="display: none;">
+                            <div class="cnt_inf_no_art_bodega_calc">
+                                <div class="ic_noinf_bodega">
+                                    <img src="images/diseno/calcula/ic_noinfo.svg" alt="">
+                                </div>
+                                <div class="txt_noinf_bodega">
+                                    Nos has seleccionado ningún artículo
+                                </div>
+                                <div class="cnt_txt_noinf">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                    <div class="txt_noinf_bodega">
+                                        Seleccionalos desde la cassilla de <strong>Artículos</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- contenido con seleccion -->
+                        <div class="cnt_col_bodeg_inf" >
+                            <div class="bodega_calc">
+                                <div class="grid_bodega_calc">
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/sofa_4p.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/alacena_un_cuerpo.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/alacena_dos_cuerpos.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/sofa_2p.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/centro_entretenimiento.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/centro_entretenimiento.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/sofa_4p.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/alacena_un_cuerpo.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/alacena_dos_cuerpos.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/sofa_2p.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/sofa_4p.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/alacena_un_cuerpo.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/alacena_dos_cuerpos.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/sofa_2p.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/centro_entretenimiento.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/centro_entretenimiento.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/sofa_4p.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/alacena_un_cuerpo.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/alacena_dos_cuerpos.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                    <div class="itm_bodega_calc">
+                                        <img src="images/diseno/calcula/sofa_2p.svg" alt="">
+                                        <span class="material-icons quitar_art_bodega_calc">cancel</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r_btn_eliminar_bod_calc">
+                                <div class="btn_elim_bod_calc">
+                                    Eliminar todo
+                                    <span class="material-icons quitar_todo_bod">cancel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_res_calc">
+                        <div class="cnt_inf_res_calc">
+                            <div class="h_num_art_res_calc">
+                                0 Artículos
+                            </div>
+                            <div class="r_dato_res_calc">
+                                <div class="etq_dato_res_calc">Total:</div>
+                                <div class="dato_res_calc">0 m<sup>3</sup></div>
+                            </div>
+                            <div class="r_dato_res_calc">
+                                <div class="etq_dato_res_calc">Necesitas una minibodega de:</div>
+                                <div class="dato_res_calc">0 m<sup>3</sup></div>
+                            </div>
+                        </div>
+                        <div class="btn">Cotiza aquí</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- SECCION CALCULADORA DE ESPACIO -->
 
@@ -241,22 +495,497 @@
             </div>
         </section>
 
-        <section class="s_container_tabs active" data-categoria="1">
-            <div class="cnt_central">
-                ----- AQUI COMPONENTE REALIZADO POR CRISTIAN 1 -----
-            </div>
-        </section>
-        <section class="s_container_tabs" data-categoria="2">
-            <div class="cnt_central">
-                ----- AQUI COMPONENTE REALIZADO POR CRISTIAN 2 -----
-            </div>
-        </section>
-        <section class="s_container_tabs" data-categoria="3">
-            <div class="cnt_central">
-                ----- AQUI COMPONENTE REALIZADO POR CRISTIAN 3 -----
-            </div>
-        </section>
+        <section class="big_setion calcula">
+            <section class="s_container_tabs active" data-categoria="1">
+                <div class="cnt_central">
+                   
+                    <div class="cnt_gen_slide_bodegas">
+                        <div class="cnt_gen_dimen_slide_bodegas">
+                            <label class="etq_dimen_bodegas">
+                                Dimensiones
+                            </label>
+                            <div class="slide_mtr_bodegas t1">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                1m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                2m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                5m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                8m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                10m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cnt_bl_slide_bodega">
+                            <div class="slide_bodega t1">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+            </section>
+            <section class="s_container_tabs" data-categoria="2">
+                <div class="cnt_central">
+                    
+                    <div class="cnt_gen_slide_bodegas">
+                        <div class="cnt_gen_dimen_slide_bodegas">
+                            <label class="etq_dimen_bodegas">
+                                Dimensiones
+                            </label>
+                            <div class="slide_mtr_bodegas t2">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                1m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                2m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                5m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                8m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                10m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cnt_bl_slide_bodega">
+                            <div class="slide_bodega t2">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </section>
+            <section class="s_container_tabs" data-categoria="3">
+                <div class="cnt_central">
+                   
+                    <!-- <div class="cnt_gen_slide_bodegas">
+                        <div class="cnt_gen_dimen_slide_bodegas">
+                            <label class="etq_dimen_bodegas">
+                                Dimensiones
+                            </label>
+                            <div class="slide_mtr_bodegas t3">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                1m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                2m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                5m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                8m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mtr_bodega">
+                                                10m<sup>3</sup>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cnt_bl_slide_bodega">
+                            <div class="slide_bodega t3">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cnt_gen_inf_bodega">
+                                                <div class="col_img_bodega">
+                                                    <img src="images/diseno/minibidegas/oikos-storage-minibodega-15-m3.webp" alt="">
+                                                    <div class="pie_img_bodega">
+                                                        *Esta es una representación artística de nuestras mini bodegas
+                                                    </div>
+                                                </div>
+                                                <div class="col_inf_bodega">
+                                                    <div class="h_bodega_sl">
+                                                        MEDIDAS MINIBODEGA
+                                                    </div>
+                                                    <div class="mts_bodega_sl">
+                                                        15m<sup>3</sup>
+                                                    </div>
+                                                    <a href="" class="btn">
+                                                        Cotiza tu bodega
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <span class="material-icons">arrow_right_alt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </section>
+        </section>
 
     </main>
 
